@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>3e84daf7-7a7c-4d82-8abf-58dff1e831ca</CanonicalId>
+  <CurrentSequence>42</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>PurchTable</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>All purchase orders</MenuItemLabel>
+            <MenuItemName>PurchTableListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormID>
+        <FormName>PurchTable</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>PurchTable</RecordingName>
+        <Sequence>2</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>15870_PurchCreateOrder_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</d2p1:Key>
+      <d2p1:Value>
+        <Annotations i:nil="true" />
+        <FormID>15870_PurchCreateOrder_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormID>
+        <FormName>PurchCreateOrder</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>PurchCreateOrder</RecordingName>
+        <Sequence>10</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>clicks_1</Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>1</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8457_0Click_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>3</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>4</Sequence>
+            <Children>
+              <Node z:Id="i4" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Click Edit.</Description>
+                <Id>8457_0Click_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx5</Id>
+                <Parent z:Ref="i3" />
+                <ParentSequence>4</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>5</Sequence>
+                <Annotations />
+                <GlobalId>0926a5f4-a113-43ca-8a9d-244fe415a6bf</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Edit</ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>Click</CommandName>
+                <ControlName>SystemDefinedViewEditButton</ControlName>
+                <ControlType>CommandButton</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId>4471</TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>SystemDefinedViewEditButton_Click</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i5" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8459_0Click_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>6</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>7</Sequence>
+            <Children>
+              <Node z:Id="i6" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Click New.</Description>
+                <Id>8459_0Click_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx8</Id>
+                <Parent z:Ref="i5" />
+                <ParentSequence>7</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>8</Sequence>
+                <Annotations />
+                <GlobalId>7f4a4130-0ddf-4144-83bc-709fbaa1d889</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>New</ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>Click</CommandName>
+                <ControlName>SystemDefinedNewButton</ControlName>
+                <ControlType>CommandButton</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId>260</TaskId>
+              </Node>
+              <Node z:Id="i7" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>15870_PurchCreateOrder_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+                <Parent z:Ref="i5" />
+                <ParentSequence>7</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>9</Sequence>
+                <Children>
+                  <Node z:Id="i8" i:type="Scope">
+                    <CustomDescription i:nil="true" />
+                    <Description></Description>
+                    <Id>15870RequestClose_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+                    <Parent z:Ref="i7" />
+                    <ParentSequence>9</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>11</Sequence>
+                    <Children>
+                      <Node z:Id="i9" i:type="CommandUserAction">
+                        <CustomDescription i:nil="true" />
+                        <Description>Close the page.</Description>
+                        <Id>15870RequestClose_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx12</Id>
+                        <Parent z:Ref="i8" />
+                        <ParentSequence>11</ParentSequence>
+                        <ScreenshotUri i:nil="true" />
+                        <Sequence>12</Sequence>
+                        <Annotations />
+                        <GlobalId>fe7dafc9-fe8e-4b7f-92b3-8ce23861c4dc</GlobalId>
+                        <SystemGenerated>false</SystemGenerated>
+                        <ControlLabel></ControlLabel>
+                        <ControlLabelId></ControlLabelId>
+                        <FormId>15870_PurchCreateOrder_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                        <ListContext i:nil="true" />
+                        <RowIndex i:nil="true" />
+                        <Arguments />
+                        <CommandName>RequestClose</CommandName>
+                        <ControlName></ControlName>
+                        <ControlType></ControlType>
+                        <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                        <ReturnType>Void</ReturnType>
+                        <ReturnValue i:nil="true" />
+                        <TaskId i:nil="true" />
+                      </Node>
+                    </Children>
+                    <IsForm>false</IsForm>
+                    <IsStepGroup>false</IsStepGroup>
+                    <Name>RequestClose</Name>
+                    <ScopeType>Private</ScopeType>
+                  </Node>
+                </Children>
+                <IsForm>true</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>PurchCreateOrder</Name>
+                <ScopeType>Public</ScopeType>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>SystemDefinedNewButton_Click</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i10" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8461_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>13</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>14</Sequence>
+            <Children>
+              <Node z:Id="i11" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Purchase order.</Description>
+                <Id>8461_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx15</Id>
+                <Parent z:Ref="i10" />
+                <ParentSequence>14</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>15</Sequence>
+                <Annotations />
+                <GlobalId>d1f1f42e-356d-48ab-b37f-5804c87e70e1</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Purchase order</ControlLabel>
+                <ControlLabelId>@SYS25545</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>PurchOrder</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>PurchOrder_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i12" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8462_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>16</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>17</Sequence>
+            <Children>
+              <Node z:Id="i13" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Purchase.</Description>
+                <Id>8462_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx18</Id>
+                <Parent z:Ref="i12" />
+                <ParentSequence>17</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>18</Sequence>
+                <Annotations />
+                <GlobalId>86006723-1884-45e6-b897-2245e48fb775</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Purchase</ControlLabel>
+                <ControlLabelId>@SYS53872</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>Purchase</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>Purchase_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i14" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8463_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>19</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>20</Sequence>
+            <Children>
+              <Node z:Id="i15" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Manage.</Description>
+                <Id>8463_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx21</Id>
+                <Parent z:Ref="i14" />
+                <ParentSequence>20</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>21</Sequence>
+                <Annotations />
+                <GlobalId>3d7adb44-fc04-4366-8da7-709454c23bef</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Manage</ControlLabel>
+                <ControlLabelId>@SYS115306</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>Manage</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>Manage_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i16" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8464_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>22</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>23</Sequence>
+            <Children>
+              <Node z:Id="i17" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Receive.</Description>
+                <Id>8464_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx24</Id>
+                <Parent z:Ref="i16" />
+                <ParentSequence>23</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>24</Sequence>
+                <Annotations />
+                <GlobalId>80fab1a2-0868-4c8d-a437-006167b99947</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Receive</ControlLabel>
+                <ControlLabelId>@SYS52744</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>Receive</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>Receive_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i18" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8465_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>25</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>26</Sequence>
+            <Children>
+              <Node z:Id="i19" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Invoice.</Description>
+                <Id>8465_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx27</Id>
+                <Parent z:Ref="i18" />
+                <ParentSequence>26</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>27</Sequence>
+                <Annotations />
+                <GlobalId>7d38cb5e-e372-4785-84e9-6308fa925f89</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Invoice</ControlLabel>
+                <ControlLabelId>@SYS14204</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>Invoice</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>Invoice_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i20" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8466_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>28</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>29</Sequence>
+            <Children>
+              <Node z:Id="i21" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Retail.</Description>
+                <Id>8466_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx30</Id>
+                <Parent z:Ref="i20" />
+                <ParentSequence>29</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>30</Sequence>
+                <Annotations />
+                <GlobalId>becbf889-31f0-40a6-b9eb-da120a727083</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Retail</ControlLabel>
+                <ControlLabelId>@RET4885</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>Retail</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>Retail_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i22" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8467_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>31</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>32</Sequence>
+            <Children>
+              <Node z:Id="i23" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Warehouse.</Description>
+                <Id>8467_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx33</Id>
+                <Parent z:Ref="i22" />
+                <ParentSequence>32</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>33</Sequence>
+                <Annotations />
+                <GlobalId>48264bdc-a83a-45d3-802e-b94ea391db84</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Warehouse</ControlLabel>
+                <ControlLabelId>@WAX13</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>WHS</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>WHS_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i24" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8468_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>34</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>35</Sequence>
+            <Children>
+              <Node z:Id="i25" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Transportation.</Description>
+                <Id>8468_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx36</Id>
+                <Parent z:Ref="i24" />
+                <ParentSequence>35</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>36</Sequence>
+                <Annotations />
+                <GlobalId>746ed7b2-4e07-4645-b92c-becb199ce78c</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Transportation</ControlLabel>
+                <ControlLabelId>@TRX1</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>TMS</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>TMS_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i26" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8478_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>37</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>38</Sequence>
+            <Children>
+              <Node z:Id="i27" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click General.</Description>
+                <Id>8478_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx39</Id>
+                <Parent z:Ref="i26" />
+                <ParentSequence>38</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>39</Sequence>
+                <Annotations />
+                <GlobalId>00af00da-f00a-4195-a9e2-a624f7d5ac4f</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>General</ControlLabel>
+                <ControlLabelId>@SYS114913</ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>General</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>General_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i28" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>8479_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>40</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>41</Sequence>
+            <Children>
+              <Node z:Id="i29" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>On the Action Pane, click Options.</Description>
+                <Id>8479_0TabShown_3f63301d-3c5b-4f1e-9fbc-47a3447b453cx42</Id>
+                <Parent z:Ref="i28" />
+                <ParentSequence>41</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>42</Sequence>
+                <Annotations />
+                <GlobalId>e4e9b6c7-0f85-40a8-b95a-7930a3082cc7</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Options</ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>7373_PurchTable_3f63301d-3c5b-4f1e-9fbc-47a3447b453c</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>TabShown</CommandName>
+                <ControlName>SystemDefinedOptions</ControlName>
+                <ControlType>AppBarTab</ControlType>
+                <LabelId i:nil="true" />
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId></TaskId>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>SystemDefinedOptions_TabShown</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>PurchTable</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>clicks_1</Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i4" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i9" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i11" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i13" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i15" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i17" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i19" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i21" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i23" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i25" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i27" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i29" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>

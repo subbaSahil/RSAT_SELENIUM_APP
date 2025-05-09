@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>0ce9af8d-d190-47f4-b6a4-dc757adc3f2f</CanonicalId>
+  <CurrentSequence>12</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>54948_PurchTable_a23d6c89-75b0-47cf-a010-731927674999</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>PurchTable</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>All purchase orders</MenuItemLabel>
+            <MenuItemName>PurchTableListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>54948_PurchTable_a23d6c89-75b0-47cf-a010-731927674999</FormID>
+        <FormName>PurchTable</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>PurchTable</RecordingName>
+        <Sequence>1</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>64349_VendInvoiceInfoListPage_a23d6c89-75b0-47cf-a010-731927674999</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendInvoiceInfoListPage</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>Pending vendor invoices</MenuItemLabel>
+            <MenuItemName>VendInvoiceInfoListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>64349_VendInvoiceInfoListPage_a23d6c89-75b0-47cf-a010-731927674999</FormID>
+        <FormName>VendInvoiceInfoListPage</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendInvoiceInfoListPage</RecordingName>
+        <Sequence>8</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>filter_manager_4</Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>a23d6c89-75b0-47cf-a010-731927674999</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>54948_PurchTable_a23d6c89-75b0-47cf-a010-731927674999</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>2</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>54948RequestClose_a23d6c89-75b0-47cf-a010-731927674999</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>2</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>3</Sequence>
+            <Children>
+              <Node z:Id="i4" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Close the page.</Description>
+                <Id>54948RequestClose_a23d6c89-75b0-47cf-a010-731927674999x4</Id>
+                <Parent z:Ref="i3" />
+                <ParentSequence>3</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>4</Sequence>
+                <Annotations />
+                <GlobalId>a1658a64-44d6-4462-95a4-c31827ce7e79</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>54948_PurchTable_a23d6c89-75b0-47cf-a010-731927674999</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>RequestClose</CommandName>
+                <ControlName></ControlName>
+                <ControlType></ControlType>
+                <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>RequestClose</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>PurchTable</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+      <Node z:Id="i5" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>MenuItemvendinvoiceinfolistpage_a23d6c89-75b0-47cf-a010-731927674999</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>5</Sequence>
+        <Children>
+          <Node z:Id="i6" i:type="MenuItemUserAction">
+            <CustomDescription i:nil="true" />
+            <Description>Go to Accounts payable &gt; Invoices &gt; Pending vendor invoices.</Description>
+            <Id>MenuItemvendinvoiceinfolistpage_a23d6c89-75b0-47cf-a010-731927674999x6</Id>
+            <Parent z:Ref="i5" />
+            <ParentSequence>5</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>6</Sequence>
+            <Annotations />
+            <GlobalId>d7daa8c6-ad94-4560-91a9-8e25b80ba616</GlobalId>
+            <SystemGenerated>false</SystemGenerated>
+            <MenuItemName>vendinvoiceinfolistpage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <NavigationPath xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <d7p1:string>mainmenu</d7p1:string>
+              <d7p1:string>AccountsPayable</d7p1:string>
+              <d7p1:string>VendorInvoices</d7p1:string>
+            </NavigationPath>
+          </Node>
+          <Node z:Id="i7" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>64349_VendInvoiceInfoListPage_a23d6c89-75b0-47cf-a010-731927674999</Id>
+            <Parent z:Ref="i5" />
+            <ParentSequence>5</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>7</Sequence>
+            <Children>
+              <Node z:Id="i8" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>SystemDefinedFilterManager_GetFilters_a23d6c89-75b0-47cf-a010-731927674999</Id>
+                <Parent z:Ref="i7" />
+                <ParentSequence>10</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>11</Sequence>
+                <Children>
+                  <Node z:Id="i9" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>Open Invoice column filter.</Description>
+                    <Id>SystemDefinedFilterManager_GetFilters_a23d6c89-75b0-47cf-a010-731927674999x12</Id>
+                    <Parent z:Ref="i8" />
+                    <ParentSequence>11</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>12</Sequence>
+                    <Annotations />
+                    <GlobalId>f7f11ec5-4a0e-4fed-82c2-849078c14c58</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>64349_VendInvoiceInfoListPage_a23d6c89-75b0-47cf-a010-731927674999</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>[{"Capability":null,"DataSourceName":"","FieldArrayIndex":1,"FieldName":"Num","FormDataSourceName":"VendInvoiceInfoTable","IsEditable":"Yes","IsQueryFilter":"Yes","MasterFormDataSourceName":"","Operator":"Matches","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":0,"Values":[""],"Version":2}]</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>VendInvoiceInfoTable_Num</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>Invoice</Value>
+                      </CommandArgument>
+                    </Arguments>
+                    <CommandName>GetFilters</CommandName>
+                    <ControlName>SystemDefinedFilterManager</ControlName>
+                    <ControlType>FilterManager</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue></ReturnValue>
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>SystemDefinedFilterManager_GetFilters</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+            </Children>
+            <IsForm>true</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendInvoiceInfoListPage</Name>
+            <ScopeType>Public</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>false</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>MenuItem_vendinvoiceinfolistpage</Name>
+        <ScopeType>Private</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>filter_manager_4</Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i4" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i9" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>

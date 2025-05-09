@@ -116,7 +116,4 @@ def extract_user_actions(input_xml):
     tree_out = ET.ElementTree(user_actions_with_details)
     tree_out.write('output.xml', encoding='UTF-8', xml_declaration=True)
  
-# Run the function
-extract_user_actions('recording.xml')
- 
  
