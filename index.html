@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RSAT XML to Selenium Script</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #555;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    input[type="file"] {
+      display: block;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 300px;
+      margin-top: 20px;
+      padding: 15px;
+      font-family: monospace;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #4a90e2;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 10px;
+    }
+
+    .status {
+      margin-top: 20px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>RSAT XML to Selenium Script</h1>
+    <h2>Upload your RSAT XML file to generate a Python script</h2>
+
+    <input type="file" id="fileInput" />
+    <div class="button-group">
+      <button onclick="runPythonScript()">Generate Script</button>
+      <button onclick="downloadScript()">Download Script</button>
+    </div>
+
+    <textarea id="fileContent" readonly placeholder="Generated Selenium script will appear here..."></textarea>
+    <div id="statusMessage" class="status"></div>
+  </div>
+
+  <script>
+    async function runPythonScript() {
+      const input = document.getElementById('fileInput');
+      const textarea = document.getElementById('fileContent');
+      const status = document.getElementById('statusMessage');
+
+      if (!input.files.length) {
+        alert("Please select a file first.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("file", input.files[0]);
+
+      try {
+        const response = await fetch('http://localhost:5000/run-script', {
+          method: "POST",
+          body: formData
+        });
+
+        const data = await response.json();
+        if (data.stdout) {
+          textarea.value = data.stdout;
+          status.textContent = "Script generated successfully.";
+          status.style.color = "green";
+        } else if (data.stderr) {
+          status.textContent = "Error: " + data.stderr;
+          status.style.color = "red";
+        }
+      } catch (err) {
+        alert("Failed to connect to server");
+        console.error(err);
+      }
+    }
+
+    async function downloadScript() {
+      try {
+        const response = await fetch('http://localhost:5000/download-script');
+        if (!response.ok) throw new Error("Network response was not ok");
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'rsat_script.py';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      } catch (err) {
+        alert("Failed to download script");
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>
