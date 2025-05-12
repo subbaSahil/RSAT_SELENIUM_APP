@@ -23,58 +23,29 @@ Interactions.wait_and_click(driver, By.XPATH, "//div[@aria-label='Modules']")
 # Clicking navigation: Accounts payable
 Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Accounts payable']")
 time.sleep(1)
-# Clicking navigation: Purchase orders
-Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Purchase orders']")
+# Clicking navigation: Invoices
+Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Invoices']")
 time.sleep(1)
-# Clicking navigation: All purchase orders
-Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='All purchase orders']")
+# Clicking navigation: Invoice journal
+Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Invoice journal']")
 time.sleep(1)
 # ❌ Locator not found for: No Control Name (Type: )
-# Clicking button: SystemDefinedNewButton
-Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='SystemDefinedNewButton']")
-# Inputting into: PurchTable_OrderAccount
-if(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@name,'PurchTable_OrderAccount')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@name,'PurchTable_OrderAccount')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "1001")
-elif(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@aria-label,'Vendor account')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@aria-label,'Vendor account')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "1001")
-# Clicking button: OK
-Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='OK']")
-# Clicking (default) on: SystemDefinedOptions
-time.sleep(3)
-Interactions.wait_and_click(driver, By.XPATH, "//button/parent::div[@data-dyn-controlname='SystemDefinedOptions']")
-# ❌ Locator not found for: LineSpec (Type: grid)
-# Inputting into: PurchLine_ItemId
-if(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@name,'PurchLine_ItemId')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@name,'PurchLine_ItemId')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "1000")
-elif(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@aria-label,'Item number')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@aria-label,'Item number')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "1000")
-# Inputting into: InventoryDimensionsGrid_InventSiteId
-if(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@name,'InventoryDimensionsGrid_InventSiteId')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@name,'InventoryDimensionsGrid_InventSiteId')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "4")
-elif(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@aria-label,'Site')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@aria-label,'Site')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "4")
-# Inputting into: InventoryDimensionsGrid_InventLocationId
-if(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@name,'InventoryDimensionsGrid_InventLocationId')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@name,'InventoryDimensionsGrid_InventLocationId')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "48")
-elif(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@aria-label,'Warehouse')]")):
-    locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@aria-label,'Warehouse')]")
-    Interactions.wait_and_send_keys(driver, By.XPATH, locator, "48")
-# ❌ Locator not found for: GridInventLocation (Type: grid)
-# ❌ Locator not found for: GridInventLocation (Type: grid)
-# Clicking button: SystemDefinedSaveButton
-Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='SystemDefinedSaveButton']")
-# Clicking (default) on: Purchase
-time.sleep(3)
-Interactions.wait_and_click(driver, By.XPATH, "//button/parent::div[@data-dyn-controlname='Purchase']")
-# Clicking (default) on: buttonConfirm
-Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='buttonConfirm']")
+# Clicking (default) on: GridOverview
+Interactions.wait_and_click(driver, By.XPATH, "//div[contains(@class,'fixedDataTableRowLayout_')]/div[@aria-rowindex='3']")
+# Clicking (default) on: Validation
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='Validation']")
+# Clicking (default) on: CheckJournal
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='CheckJournal']")
+# Clicking (default) on: PostJournal
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='PostJournal']")
+# Clicking (default) on: LedgerJournalPostTransfer
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='LedgerJournalPostTransfer']")
+# Clicking (default) on: PrintMenu
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='PrintMenu']")
+# Clicking (default) on: LedgerTransPerJournal
+Interactions.wait_and_click(driver, By.XPATH, "//button[@name='LedgerTransPerJournal']")
+# Clicking button: CommandButton
+Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='CommandButton']")
 time.sleep(5)
 print("test case passed")
 driver.quit()

@@ -133,7 +133,7 @@ def generate_selenium_script(controls):
             lines.append("Interactions.click_back_button(driver, By.XPATH, \"//button[@data-dyn-controlname='SystemDefinedCloseButton']\")")
             lines.append("time.sleep(1)")
             continue
-        xpath = generate_xpath_from_control(ctype, name,label, description, value)
+        xpath = generate_xpath_from_control(ctype, name,label, description, value,second_word)
 
         if description.startswith("Go to"):
             navgation_array = Interactions.extract_navigation_steps(description)
@@ -186,7 +186,7 @@ def generate_selenium_script(controls):
                 lines.append(f"    Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[0]}\", \"{value}\")")
                 lines.append(f"elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\")):")
                 lines.append(f"    Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[1]}\", \"{value}\")")
-            elif ctype == "commandbutton" or ctype == "checkBox":
+            elif ctype == "commandbutton":
                 lines.append(f"# Clicking button: {name}")
                 lines.append(f"Interactions.wait_and_click(driver, By.XPATH, \"{xpath}\")")
             elif ctype == "multilineinput":
@@ -200,6 +200,12 @@ def generate_selenium_script(controls):
                 lines.append(f"elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\")):")
                 lines.append(f"    Interactions.wait_and_click(driver, By.XPATH, \"{xpath[1]}\")")
                 # lines.append(f"    Interactions.wait_and_click(driver, By.XPATH, \"//div[text()='{xpath[1]}']\")")
+            elif ctype == "combobox":
+                lines.append(f"# Clicking combobox: {name}")
+                lines.append(f"if Interactions.check_element_exist(driver, By.XPATH, \"{xpath[0]}\"):")
+                lines.append(f"     Interactions.wait_and_click(driver, By.XPATH, \"{xpath[0]}\")")
+                lines.append(f"elif Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\"):")
+                lines.append(f"     Interactions.wait_and_click(driver, By.XPATH, \"{xpath[1]}\")")
             elif ctype == "appbartab":
                 lines.append(f"# Clicking (default) on: {name}")
                 lines.append("time.sleep(3)")
@@ -261,7 +267,10 @@ def generate_selenium_script(controls):
                     lines.append("    Interactions.wait_and_send_keys(driver, By.XPATH, to_date_locator, new_val[1])")
                     lines.append("else:")
                     lines.append("    Interactions.wait_and_send_keys(driver, By.XPATH, input_field, new_val)")
-                    lines.append(f"Interactions.wait_and_click(driver, By.XPATH, apply_button)")  
+                    lines.append(f"Interactions.wait_and_click(driver, By.XPATH, apply_button)") 
+            elif ctype == "grid" and name == "GridOverview":
+                lines.append(f"# Clicking (default) on: {name}")
+                lines.append(f"Interactions.wait_and_click(driver, By.XPATH, \"{xpath}\")")
             else:
                 lines.append(f"# Clicking (default) on: {name}")
                 lines.append(f"Interactions.wait_and_click(driver, By.XPATH, \"{xpath}\")")
