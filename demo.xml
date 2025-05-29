@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<UserActionsWithDetails>
+    <UserAction Ref="i3">
+        <Description>Go to Accounts receivable &gt; Orders &gt; Sales agreements.</Description>
+        <NodeId>i3</NodeId>
+        <Sequence>23</Sequence>
+        <Navigation>mainmenu</Navigation>
+        <Navigation>AccountsReceivable</Navigation>
+        <Navigation>Orders</Navigation>
+        <ControlName>No Control Name</ControlName>
+        <ControlLabel />
+        <ControlType />
+        <Value />
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i6">
+        <Description>Click New.</Description>
+        <NodeId>i6</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>SystemDefinedNewButton</ControlName>
+        <ControlLabel>New</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i9">
+        <Description>In the Customer account field, enter or select a value.</Description>
+        <NodeId>i9</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>SalesAgreementHeader_CustAccount</ControlName>
+        <ControlLabel>Customer account</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>US-005</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i13">
+        <Description>In the list, select row 6.</Description>
+        <NodeId>i13</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value>6</Value>
+        <CommandName>ChangeSelectedIndexInCache</CommandName>
+    </UserAction>
+    <UserAction Ref="i17">
+        <Description>In the Sales agreement classification field, enter or select a value.</Description>
+        <NodeId>i17</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>SalesAgreementHeader_AgreementClassification</ControlName>
+        <ControlLabel>Sales agreement classification</ControlLabel>
+        <ControlType>ReferenceGroup</ControlType>
+        <Value>Blanket sales agreement</Value>
+        <CommandName>ResolveChanges</CommandName>
+    </UserAction>
+    <UserAction Ref="i23">
+        <Description>Click OK.</Description>
+        <NodeId>i23</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>OK</ControlName>
+        <ControlLabel>OK</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i26">
+        <Description>Click Add line.</Description>
+        <NodeId>i26</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>NewLineGridCmdButton</ControlName>
+        <ControlLabel>Add line</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i30">
+        <Description>In the Item number field, enter or select a value.</Description>
+        <NodeId>i30</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>AgreementLine_ItemId</ControlName>
+        <ControlLabel>Item number</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>A0002</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i34">
+        <Description>In the list, select row 6.</Description>
+        <NodeId>i34</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value>6</Value>
+        <CommandName>ChangeSelectedIndexInCache</CommandName>
+    </UserAction>
+    <UserAction Ref="i38">
+        <Description>In the Expiration date field, enter a date.</Description>
+        <NodeId>i38</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>AgreementLine_ExpirationDate</ControlName>
+        <ControlLabel>Expiration date</ControlLabel>
+        <ControlType>Date</ControlType>
+        <Value>2025-05-30</Value>
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i40">
+        <Description>In the Site field, enter or select a value.</Description>
+        <NodeId>i40</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>Warehouse_InventSiteId</ControlName>
+        <ControlLabel>Site</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>4</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i44">
+        <Description>In the list, select row 4.</Description>
+        <NodeId>i44</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value>4</Value>
+        <CommandName>ChangeSelectedIndexInCache</CommandName>
+    </UserAction>
+    <UserAction Ref="i48">
+        <Description>In the Warehouse field, enter or select a value.</Description>
+        <NodeId>i48</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>Warehouse_InventLocationId</ControlName>
+        <ControlLabel>Warehouse</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>48</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i52">
+        <Description>In the list, select row 2.</Description>
+        <NodeId>i52</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>GridInventLocation</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value>2</Value>
+        <CommandName>ChangeSelectedIndexInCache</CommandName>
+    </UserAction>
+    <UserAction Ref="i56">
+        <Description>Click Save.</Description>
+        <NodeId>i56</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>SystemDefinedSaveButton</ControlName>
+        <ControlLabel>Save</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i58">
+        <Description>Click Confirmation.</Description>
+        <NodeId>i58</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>ButtonConfirmation</ControlName>
+        <ControlLabel>Confirmation</ControlLabel>
+        <ControlType>MenuItemButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i61">
+        <Description>Click OK.</Description>
+        <NodeId>i61</NodeId>
+        <Sequence>23</Sequence>
+        <ControlName>OKButton</ControlName>
+        <ControlLabel>OK</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+</UserActionsWithDetails>

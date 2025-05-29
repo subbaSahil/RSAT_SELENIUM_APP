@@ -2,9 +2,10 @@ def generate_xpath_from_control(control_type, control_name, control_label, descr
     control_type = control_type.lower()
 #filter manager/quick filter
     if control_type in ["commandbutton", "menuitembutton","dropdialogbutton","button","togglebutton"]:
-        return f"//button[@data-dyn-controlname='{control_name}']"
+        return [f"//button[@data-dyn-controlname='{control_name}']",
+                 f"//button[@aria-label='{control_label}']"]
     elif control_type in ["menubutton", "menuitem"]:
-        return f"//button[@name='{control_name}']"
+        return [f"//button[@name='{control_name}']", f"//span[text()='{control_label}']/ancestor::button"]
     # elif control_type in ["combobox"]:
     #     return f"//div[@data-dyn-controlname='{control_name}']"
     elif control_type == "combobox":
@@ -20,7 +21,7 @@ def generate_xpath_from_control(control_type, control_name, control_label, descr
             ]
     elif control_type == "pivotitem":
         return f"//li[contains(@data-dyn-controlname,'{control_name}')]"
-    elif control_type in ["input", "real", "referencegroup","date","radiobutton", "quickfilter","filtermanager", "segmentedentry"]:
+    elif control_type in ["input", "real", "referencegroup","date","radiobutton", "quickfilter","filtermanager"]:
         return [
             f"//input[contains(@name,'{control_name.strip()}')]",
             f"//input[contains(@aria-label,'{control_label.strip()}')]"
@@ -33,5 +34,20 @@ def generate_xpath_from_control(control_type, control_name, control_label, descr
         if second_word:
             return f"(//span[contains(text(),'{second_word}')]/parent::div/parent::button)[2]"
         return f"(//span[contains(text(),'Personalize')]/parent::div/parent::button)[2]"
-    elif control_type == "grid" and control_name == "GridOverview":
-        return f"//div[contains(@class,'fixedDataTableRowLayout_')]/div[@aria-rowindex='{str(int(value) + 1) }']"
+    elif control_type == "grid":
+        if value == "": 
+            return f"//div[contains(@class,'fixedDataTableRowLayout_')]"
+        elif value == "true" or value == "false":
+            return f"//div[contains(@class,'fixedDataTableRowLayout_')]/div[@aria-rowindex='1']"
+        #if value !='' or value != "true" or value != "false":
+        else:
+            return f"//div[contains(@class,'fixedDataTableRowLayout_')]/div[@aria-rowindex='{str(int(value) + 1) }']"
+    elif control_name == "No Control Name":
+        return
+    elif control_type == "segmentedentry":
+        return [
+            f"//input[contains(@name,'{control_name.strip()}')]",
+            f"//input[contains(@aria-label,'{control_label.strip()}')]",
+            f"//input[@title='{control_label.strip()}']"
+        ]
+    

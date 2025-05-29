@@ -16,7 +16,7 @@ def extract_user_actions(input_xml):
     user_actions = root.findall(".//UserActions//d2p1:anyType", namespaces=namespaces)
  
     actions_dict = {}
- 
+    first_occurrence_of_navigtion = None
     for index, action in enumerate(user_actions):
         ref = action.attrib.get("{http://schemas.microsoft.com/2003/10/Serialization/}Ref")
         node = root.find(f".//Node[@z:Id='{ref}']", namespaces=namespaces)
@@ -28,11 +28,15 @@ def extract_user_actions(input_xml):
         value = ''
         navigation_path = []
         annotations_elem = None  # To store annotations if "Close the page."
+        command_name = ''
  
         if node is not None:
             desc_elem = node.find(".//Description", namespaces=namespaces)
             if desc_elem is not None and desc_elem.text:
-                description = desc_elem.text
+                # if desc_elem.text.startswith("Go to"):
+                #     first_occurrence_of_navigtion = True
+                # if first_occurrence_of_navigtion:
+                    description = desc_elem.text
  
             # Capture annotations only for "Close the page."
             if description == "Close the page.":
@@ -49,9 +53,13 @@ def extract_user_actions(input_xml):
             control_name_elem = node.find(".//ControlName", namespaces=namespaces)
             if control_name_elem is not None and control_name_elem.text:
                 control_name_text = control_name_elem.text
-                if control_name_text.strip() == "Grid" and control_type.strip() == "Grid":
-                    continue
+                # if control_name_text.strip() == "Grid" and control_type.strip() == "GridOverview":
+                #     continue   we commented this because we were ignoring grid in the beginning 
                 control_names.append(control_name_text)
+            
+            command_name_elem = node.find(".//CommandName", namespaces=namespaces)
+            if command_name_elem is not None and command_name_elem.text:
+                command_name = command_name_elem.text
             else:
                 nav_path = node.find(".//NavigationPath", namespaces=namespaces)
                 if nav_path is not None:
@@ -78,7 +86,8 @@ def extract_user_actions(input_xml):
                 "ControlType": control_type,
                 "Value": value,
                 "NavigationPath": navigation_path,
-                "Annotations": annotations_elem  # store only if it's for "Close the page."
+                "Annotations": annotations_elem , # store only if it's for "Close the page."
+                "command_name": command_name
             }
  
         for control_name in control_names:
@@ -105,6 +114,7 @@ def extract_user_actions(input_xml):
         ET.SubElement(user_action, "ControlLabel").text = action_data["ControlLabel"]
         ET.SubElement(user_action, "ControlType").text = action_data["ControlType"]
         ET.SubElement(user_action, "Value").text = action_data["Value"]
+        ET.SubElement(user_action, "CommandName").text = action_data["command_name"]
  
         # Add Annotations only if present
         if action_data["Annotations"] is not None:
@@ -116,4 +126,4 @@ def extract_user_actions(input_xml):
     tree_out = ET.ElementTree(user_actions_with_details)
     tree_out.write('output.xml', encoding='UTF-8', xml_declaration=True)
  
- 
+# extract_user_actions("recording.xml")
