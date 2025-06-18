@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>6f973f38-6ce7-4919-ba0a-c9e96e415380</CanonicalId>
+  <CurrentSequence>12</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>13037_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>InventOnhandItem</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>On-hand list</MenuItemLabel>
+            <MenuItemName>InventOnhandItem</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>13037_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</FormID>
+        <FormName>InventOnhandItem</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>InventOnhandItem</RecordingName>
+        <Sequence>1</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>13241_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>InventOnhandItem</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>On-hand list</MenuItemLabel>
+            <MenuItemName>InventOnhandItem</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>13241_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</FormID>
+        <FormName>InventOnhandItem</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>InventOnhandItem</RecordingName>
+        <Sequence>8</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>filter pane </Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>13037_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>2</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>13037RequestClose_bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>2</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>3</Sequence>
+            <Children>
+              <Node z:Id="i4" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Close the page.</Description>
+                <Id>13037RequestClose_bd595b65-d54c-4826-ab3b-05f239fe7af3x4</Id>
+                <Parent z:Ref="i3" />
+                <ParentSequence>3</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>4</Sequence>
+                <Annotations />
+                <GlobalId>18fd3a15-1554-4345-8688-fe5ed4970625</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>13037_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>RequestClose</CommandName>
+                <ControlName></ControlName>
+                <ControlType></ControlType>
+                <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>RequestClose</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>InventOnhandItem</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+      <Node z:Id="i5" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>MenuIteminventonhanditem_bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>5</Sequence>
+        <Children>
+          <Node z:Id="i6" i:type="MenuItemUserAction">
+            <CustomDescription i:nil="true" />
+            <Description>Go to Inventory management &gt; Inquiries and reports &gt; On-hand list.</Description>
+            <Id>MenuIteminventonhanditem_bd595b65-d54c-4826-ab3b-05f239fe7af3x6</Id>
+            <Parent z:Ref="i5" />
+            <ParentSequence>5</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>6</Sequence>
+            <Annotations />
+            <GlobalId>520fcd46-c524-4c79-b5d4-053ab056246f</GlobalId>
+            <SystemGenerated>false</SystemGenerated>
+            <MenuItemName>inventonhanditem</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <NavigationPath xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <d7p1:string>mainmenu</d7p1:string>
+              <d7p1:string>InventoryManagement</d7p1:string>
+              <d7p1:string>InquiriesAndReports</d7p1:string>
+            </NavigationPath>
+          </Node>
+          <Node z:Id="i7" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>13241_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+            <Parent z:Ref="i5" />
+            <ParentSequence>5</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>7</Sequence>
+            <Children>
+              <Node z:Id="i8" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>SystemDefinedFilterPane_ApplyFilters_bd595b65-d54c-4826-ab3b-05f239fe7af3</Id>
+                <Parent z:Ref="i7" />
+                <ParentSequence>10</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>11</Sequence>
+                <Children>
+                  <Node z:Id="i9" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>Apply the following filters: Enter a filter value of "GA0002" on the "Item number" field using the "contains" filter operator; Enter a filter value of "2" on the "Site" field using the "contains" filter operator; Enter a filter value of "11-UND" on the "Warehouse" field using the "is not" filter operator; Enter a filter value of "000002" on the "Serial number" field using the "contains" filter operator; Enter a filter value of "" on the "Batch number" field using the "begins with" filter operator; Enter a filter value of "abc" on the "Search name" field using the "does not contain" filter operator</Description>
+                    <Id>SystemDefinedFilterPane_ApplyFilters_bd595b65-d54c-4826-ab3b-05f239fe7af3x12</Id>
+                    <Parent z:Ref="i8" />
+                    <ParentSequence>11</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>12</Sequence>
+                    <Annotations />
+                    <GlobalId>10f9faa7-ae4a-4d6f-80d3-cf6a73b2accd</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>13241_InventOnhandItem_bd595b65-d54c-4826-ab3b-05f239fe7af3</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>Enter a filter value of "GA0002" on the "Item number" field using the "contains" filter operator; Enter a filter value of "2" on the "Site" field using the "contains" filter operator; Enter a filter value of "11-UND" on the "Warehouse" field using the "is not" filter operator; Enter a filter value of "000002" on the "Serial number" field using the "contains" filter operator; Enter a filter value of "" on the "Batch number" field using the "begins with" filter operator; Enter a filter value of "abc" on the "Search name" field using the "does not contain" filter operator</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>[{"fieldLabel":"Item number","operatorLabel":"contains","values":"GA0002"},{"fieldLabel":"Site","operatorLabel":"contains","values":"2"},{"fieldLabel":"Warehouse","operatorLabel":"is not","values":"11-UND"},{"fieldLabel":"Serial number","operatorLabel":"contains","values":"000002"},{"fieldLabel":"Batch number","operatorLabel":"begins with","values":""},{"fieldLabel":"Search name","operatorLabel":"does not contain","values":"abc"}]</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>[{"Capability":null,"DataSourceName":"InventSum","FieldArrayIndex":1,"FieldName":"ItemId","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"Contains","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":8901,"Values":["GA0002"],"Version":2},{"Capability":null,"DataSourceName":"InventDim","FieldArrayIndex":1,"FieldName":"InventSiteId","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"Contains","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":3476,"Values":["2"],"Version":2},{"Capability":null,"DataSourceName":"InventDim","FieldArrayIndex":1,"FieldName":"InventLocationId","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"IsNot","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":3476,"Values":["11-UND"],"Version":2},{"Capability":null,"DataSourceName":"InventDim","FieldArrayIndex":1,"FieldName":"inventSerialId","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"Contains","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":3476,"Values":["000002"],"Version":2},{"Capability":null,"DataSourceName":"InventDim","FieldArrayIndex":1,"FieldName":"inventBatchId","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"BeginsWith","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":3476,"Values":[""],"Version":2},{"Capability":null,"DataSourceName":"InventTable_DS","FieldArrayIndex":1,"FieldName":"NameAlias","FormDataSourceName":"","IsEditable":"Yes","IsQueryFilter":"No","MasterFormDataSourceName":"InventSum","Operator":"DoesNotContain","RecordingReferences":[],"SFKReplacementFieldBinding":"","TableId":8649,"Values":["abc"],"Version":2}]</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>true</Value>
+                      </CommandArgument>
+                    </Arguments>
+                    <CommandName>ApplyFilters</CommandName>
+                    <ControlName>SystemDefinedFilterPane</ControlName>
+                    <ControlType>FilterPane</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue></ReturnValue>
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>SystemDefinedFilterPane_ApplyFilters</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+            </Children>
+            <IsForm>true</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>InventOnhandItem</Name>
+            <ScopeType>Public</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>false</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>MenuItem_inventonhanditem</Name>
+        <ScopeType>Private</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>filter pane </Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i4" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i9" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>

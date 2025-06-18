@@ -82,7 +82,7 @@ def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
 
         if enable_fallback and base_xpath:
             # Try fallback by clicking indexed variants
-            for i in range(1, 20):
+            for i in range(1, 4):
                 indexed_xpath = f"({base_xpath})[{i}]"
                 try:
                     fallback_element = WebDriverWait(driver, timeout).until(
@@ -97,7 +97,19 @@ def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
             print(f"No fallback attempted or no base_xpath provided. Exception: {str(e)}")
 
     time.sleep(1) 
-        
+
+def click_save_back_button(driver, by, base_xpath, timeout=10):
+    for i in range(1, 20):
+        indexed_xpath = f"({base_xpath})[{i}]"
+        try:
+            fallback_element = WebDriverWait(driver, timeout).until(
+                EC.element_to_be_clickable((by, indexed_xpath))
+            )
+            driver.execute_script("arguments[0].click();", fallback_element)
+            break
+        except Exception as ex:
+            print(f"Attempt {i} failed for xpath: {indexed_xpath} - {str(ex)}")
+
 def hover_on_an_element(driver, by, value, timeout=10):
     element = WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, value)))
     ActionChains(driver).move_to_element(element).perform()
@@ -636,3 +648,32 @@ def take_screenshot_on_failure(driver, test_name="test"):
     """
     take_screenshot(driver, f"failure_{test_name}")
  
+
+def click_multiple_xpaths(driver, by, xpath_list, timeout=10):
+    for xpath in xpath_list:
+        try:
+            if(check_element_exist(driver, by, xpath, timeout)):
+                wait_and_click(driver, by, xpath, timeout)
+                return True
+        except TimeoutException:
+            print(f"❌ Element not found: {xpath}")
+    return False
+def send_keys_with_multiple_xpaths(driver, by, xpath_list, keys, timeout=10):
+    for xpath in xpath_list:
+        try:
+            if(check_element_exist(driver, by, xpath, timeout)):
+                clear_input_field_and_send_keys(driver, by, xpath, keys, timeout)
+                return True
+        except TimeoutException:
+            print(f"❌ Element not found: {xpath}")
+
+def click_multiple_checkboxes(driver, by, xpath_list, value, timeout=10):
+    for xpath in xpath_list:
+        try:
+            if(check_element_exist(driver, by, xpath, timeout)):
+                if check_if_checkbox_is_checked(driver, by, xpath, value, timeout):
+                    wait_and_click(driver, by, xpath, timeout)
+                    return True
+        except TimeoutException:
+            print(f"❌ Element not found: {xpath}")
+    return False

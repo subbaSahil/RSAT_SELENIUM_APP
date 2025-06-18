@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>7b9e191d-e662-424e-b6f9-a5972024e51c</CanonicalId>
+  <CurrentSequence>38</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendParameters</ConfigurationOwnerName>
+            <ConfigurationScope>10</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>Accounts payable parameters</MenuItemLabel>
+            <MenuItemName>VendParameters</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormID>
+        <FormName>VendParameters</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendParameters</RecordingName>
+        <Sequence>1</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>account_pay_params_1</Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>2</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10595Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>3</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>4</Sequence>
+            <Children>
+              <Node z:Id="i4" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select Yes in the Enable vendor approvals field.</Description>
+                <Id>10595Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x5</Id>
+                <Parent z:Ref="i3" />
+                <ParentSequence>4</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>5</Sequence>
+                <Annotations />
+                <GlobalId>18c6c2ad-167c-4e05-86ae-9a72f2daf92b</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable vendor approvals</ControlLabel>
+                <ControlLabelId>@AccountsPayable:VendTableChangeProposalIsEnabled_Title</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendParameters</BoundDataSource>
+                <BoundProperty>VendTableChangeProposalIsEnabled</BoundProperty>
+                <ControlName>ChangeProposalOptions_VendTableChangeProposalIsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:Slider_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>True</Value>
+                <ValueLabel>@SysTaskRecorder:Yes</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>ChangeProposalOptions_VendTableChangeProposalIsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i5" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>6</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>7</Sequence>
+            <Children>
+              <Node z:Id="i6" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select the Enable check box.</Description>
+                <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x8</Id>
+                <Parent z:Ref="i5" />
+                <ParentSequence>7</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>8</Sequence>
+                <Annotations />
+                <GlobalId>9bc2c607-4612-4d4a-9390-cde7230c5cf0</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable</ControlLabel>
+                <ControlLabelId>@SYS70338</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendTableChangeProposalFieldEnablement</BoundDataSource>
+                <BoundProperty>IsEnabled</BoundProperty>
+                <ControlName>VendTableChangeProposalFieldEnablement_IsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:CheckBox_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>True</Value>
+                <ValueLabel>@SysTaskRecorder:Check</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendTableChangeProposalFieldEnablement_IsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i7" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>9</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>10</Sequence>
+            <Children>
+              <Node z:Id="i8" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>In the list, find and select the desired record.</Description>
+                <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4x11</Id>
+                <Parent z:Ref="i7" />
+                <ParentSequence>10</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>11</Sequence>
+                <Annotations />
+                <GlobalId>79abbf6c-ed6c-42cc-9590-04658c606d2d</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <Arguments>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>2</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>4</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>1</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>first</Value>
+                  </CommandArgument>
+                </Arguments>
+                <CommandName>ChangeSelectedIndexInCache</CommandName>
+                <ControlName>ChangeProposalGrid</ControlName>
+                <ControlType>Grid</ControlType>
+                <LabelId></LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>ChangeProposalGrid_ChangeSelectedIndexInCache</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i9" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>14</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>15</Sequence>
+            <Children>
+              <Node z:Id="i10" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select the Enable check box.</Description>
+                <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x16</Id>
+                <Parent z:Ref="i9" />
+                <ParentSequence>15</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>16</Sequence>
+                <Annotations />
+                <GlobalId>1bf53062-90a4-449e-ac68-e6c94d0782da</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable</ControlLabel>
+                <ControlLabelId>@SYS70338</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendTableChangeProposalFieldEnablement</BoundDataSource>
+                <BoundProperty>IsEnabled</BoundProperty>
+                <ControlName>VendTableChangeProposalFieldEnablement_IsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:CheckBox_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>True</Value>
+                <ValueLabel>@SysTaskRecorder:Check</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendTableChangeProposalFieldEnablement_IsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i11" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>17</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>18</Sequence>
+            <Children>
+              <Node z:Id="i12" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>In the list, find and select the desired record.</Description>
+                <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4x19</Id>
+                <Parent z:Ref="i11" />
+                <ParentSequence>18</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>19</Sequence>
+                <Annotations />
+                <GlobalId>a1161c82-c51d-4093-a50f-5c9d5e7d0342</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <Arguments>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>3</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>4</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>2</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>first</Value>
+                  </CommandArgument>
+                </Arguments>
+                <CommandName>ChangeSelectedIndexInCache</CommandName>
+                <ControlName>ChangeProposalGrid</ControlName>
+                <ControlType>Grid</ControlType>
+                <LabelId></LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>ChangeProposalGrid_ChangeSelectedIndexInCache</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i13" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>22</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>23</Sequence>
+            <Children>
+              <Node z:Id="i14" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select the Enable check box.</Description>
+                <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x24</Id>
+                <Parent z:Ref="i13" />
+                <ParentSequence>23</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>24</Sequence>
+                <Annotations />
+                <GlobalId>1162e19d-5ad0-47e1-9b50-175db4b53737</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable</ControlLabel>
+                <ControlLabelId>@SYS70338</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendTableChangeProposalFieldEnablement</BoundDataSource>
+                <BoundProperty>IsEnabled</BoundProperty>
+                <ControlName>VendTableChangeProposalFieldEnablement_IsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:CheckBox_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>True</Value>
+                <ValueLabel>@SysTaskRecorder:Check</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendTableChangeProposalFieldEnablement_IsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i15" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>25</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>26</Sequence>
+            <Children>
+              <Node z:Id="i16" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>In the list, find and select the desired record.</Description>
+                <Id>10597ChangeSelectedIndexInCache_8a25c4e3-a12e-4ecb-928f-53df667f73b4x27</Id>
+                <Parent z:Ref="i15" />
+                <ParentSequence>26</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>27</Sequence>
+                <Annotations />
+                <GlobalId>477ae07c-2b2f-4e6f-be43-ef314e2002cf</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <Arguments>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>4</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>4</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>3</Value>
+                  </CommandArgument>
+                  <CommandArgument>
+                    <IsReference>false</IsReference>
+                    <Value>first</Value>
+                  </CommandArgument>
+                </Arguments>
+                <CommandName>ChangeSelectedIndexInCache</CommandName>
+                <ControlName>ChangeProposalGrid</ControlName>
+                <ControlType>Grid</ControlType>
+                <LabelId></LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>ChangeProposalGrid_ChangeSelectedIndexInCache</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i17" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>30</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>31</Sequence>
+            <Children>
+              <Node z:Id="i18" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select the Enable check box.</Description>
+                <Id>10601Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x32</Id>
+                <Parent z:Ref="i17" />
+                <ParentSequence>31</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>32</Sequence>
+                <Annotations />
+                <GlobalId>60db1652-6687-43d9-bb36-d71a352a9249</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable</ControlLabel>
+                <ControlLabelId>@SYS70338</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext>ChangeProposalGrid</ListContext>
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendTableChangeProposalFieldEnablement</BoundDataSource>
+                <BoundProperty>IsEnabled</BoundProperty>
+                <ControlName>VendTableChangeProposalFieldEnablement_IsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:CheckBox_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>True</Value>
+                <ValueLabel>@SysTaskRecorder:Check</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendTableChangeProposalFieldEnablement_IsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+          <Node z:Id="i19" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>10595Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>36</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>37</Sequence>
+            <Children>
+              <Node z:Id="i20" i:type="PropertyUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Select No in the Enable vendor approvals field.</Description>
+                <Id>10595Value_8a25c4e3-a12e-4ecb-928f-53df667f73b4x38</Id>
+                <Parent z:Ref="i19" />
+                <ParentSequence>37</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>38</Sequence>
+                <Annotations />
+                <GlobalId>7ba4d46f-5807-4e91-a6a1-e7a8edf1b107</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel>Enable vendor approvals</ControlLabel>
+                <ControlLabelId>@AccountsPayable:VendTableChangeProposalIsEnabled_Title</ControlLabelId>
+                <FormId>10174_VendParameters_8a25c4e3-a12e-4ecb-928f-53df667f73b4</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <BoundDataSource>VendParameters</BoundDataSource>
+                <BoundProperty>VendTableChangeProposalIsEnabled</BoundProperty>
+                <ControlName>ChangeProposalOptions_VendTableChangeProposalIsEnabled</ControlName>
+                <ControlType>CheckBox</ControlType>
+                <IsReference>false</IsReference>
+                <LabelId>@SysTaskRecorder:Slider_SetValue</LabelId>
+                <PropertyName>Value</PropertyName>
+                <UserActionType>Input</UserActionType>
+                <Value>False</Value>
+                <ValueLabel>@SysTaskRecorder:No</ValueLabel>
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>ChangeProposalOptions_VendTableChangeProposalIsEnabled_Value</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>VendParameters</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>account_pay_params_1</Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i4" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i8" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i10" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i12" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i14" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i16" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i18" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i20" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>
