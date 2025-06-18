@@ -154,7 +154,7 @@ def generate_selenium_script(controls):
         """from base import BaseTest
 from selenium.webdriver.common.by import By
 import Interactions
-
+import time
 base = BaseTest()
 driver = base.driver
 ActionChains = base.ActionChains
@@ -271,8 +271,8 @@ test_passed = base.test_passed""",
                     if add_line_flag and ctype == "commandbutton" and description == "Click Add line.":
                         line_item_container = "//div[text()='Item number'  or text()='Line number' ]/ancestor::div[contains(@class,'fixedDataTableRowLayout_')]/ancestor::div[@role='grid']"
                         line_item_xpath = "//div[text()='Item number'  or text()='Line number' ]/ancestor::div[contains(@class,'fixedDataTableRowLayout_')]/ancestor::div[@role='grid']//input[contains(@aria-label,'Line number')]"
-                        lines.append(f"    count = Interactions.check_for_line_item_count(driver, By.XPATH, \"{line_item_xpath}\")")
-                        lines.append(f"    row_number = Interactions.get_row_number_for_line_item(driver, By.XPATH, \"{line_item_container}\",count)")
+                        lines.append(f"     count = Interactions.check_for_line_item_count(driver, By.XPATH, \"{line_item_xpath}\")")
+                        lines.append(f"     row_number = Interactions.get_row_number_for_line_item(driver, By.XPATH, \"{line_item_container}\",count)")
                 elif ctype in ["menuitembutton","dropdialogbutton"]:
                     more_button = "//div[@data-dyn-controlname='ActionPane']//div[@class='appBar-toolbar']//div[@data-dyn-role='OverflowButton']"
                     lines.append(f"     if(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[0]}\")):")
