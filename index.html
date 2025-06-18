@@ -87,10 +87,12 @@
     <h1>RSAT XML to Selenium Script</h1>
     <h2>Upload your RSAT XML file to generate a Python script</h2>
 
-    <input type="file" id="fileInput" />
+    <input type="file" id="fileInput" multiple />
     <div class="button-group">
       <button onclick="runPythonScript()">Generate Script</button>
       <button onclick="downloadScript()">Download Script</button>
+      <!-- <button onclick="executeScript()">Run Script</button> -->
+
     </div>
 
     <textarea id="fileContent" readonly placeholder="Generated Selenium script will appear here..."></textarea>
@@ -98,60 +100,98 @@
   </div>
 
   <script>
-    async function runPythonScript() {
-      const input = document.getElementById('fileInput');
-      const textarea = document.getElementById('fileContent');
-      const status = document.getElementById('statusMessage');
+async function runPythonScript() {
+  const input = document.getElementById('fileInput');
+  const textarea = document.getElementById('fileContent');
+  const status = document.getElementById('statusMessage');
 
-      if (!input.files.length) {
-        alert("Please select a file first.");
-        return;
+  if (!input.files.length) {
+    alert("Please select at least one file.");
+    return;
+  }
+
+  textarea.value = "";
+  status.textContent = "Processing...";
+  status.style.color = "black";
+
+  for (const file of input.files) {
+    const formData = new FormData(); // 👈 Moved inside loop
+    formData.append("file", file);
+
+    try {
+      const response = await fetch('http://localhost:5000/run-script', {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+      if (typeof data === 'object') {
+        const output = data[file.name] || "Unknown error";
+        textarea.value += `# ${file.name}\n${output}\n\n`;
+      } else {
+        textarea.value += `# ${file.name} - Unexpected Response\n${JSON.stringify(data)}\n\n`;
       }
 
-      const formData = new FormData();
-      formData.append("file", input.files[0]);
-
-      try {
-        const response = await fetch('http://localhost:5000/run-script', {
-          method: "POST",
-          body: formData
-        });
-
-        const data = await response.json();
-        if (data.stdout) {
-          textarea.value = data.stdout;
-          status.textContent = "Script generated successfully.";
-          status.style.color = "green";
-        } else if (data.stderr) {
-          status.textContent = "Error: " + data.stderr;
-          status.style.color = "red";
-        }
-      } catch (err) {
-        alert("Failed to connect to server");
-        console.error(err);
-      }
+      status.textContent = "Script(s) generated successfully.";
+      status.style.color = "green";
+    } catch (err) {
+      console.error(err);
+      textarea.value += `# ${file.name} - Failed to connect\n\n`;
+      status.textContent = "Error occurred during script generation.";
+      status.style.color = "red";
     }
+  }
+}
 
-    async function downloadScript() {
-      try {
-        const response = await fetch('http://localhost:5000/download-script');
-        if (!response.ok) throw new Error("Network response was not ok");
 
-        const blob = await response.blob();
-        const url = window.URL.createObjectURL(blob);
+async function downloadScript() {
+  try {
+    const response = await fetch('http://localhost:5000/download-all-scripts');
+    if (!response.ok) throw new Error("Network response was not ok");
 
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'rsat_script.py';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        window.URL.revokeObjectURL(url);
-      } catch (err) {
-        alert("Failed to download script");
-        console.error(err);
-      }
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'all_scripts.zip';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  } catch (err) {
+    alert("Failed to download scripts");
+    console.error(err);
+  }
+}
+
+
+  async function executeScript() {
+  const textarea = document.getElementById('fileContent');
+  const status = document.getElementById('statusMessage');
+
+  try {
+    const response = await fetch('http://localhost:5000/execute-generated-script', {
+      method: 'POST'
+    });
+
+    const data = await response.json();
+    if (data.stdout) {
+      textarea.value = data.stdout;
+      status.textContent = "Script executed successfully.";
+      status.style.color = "blue";
+    } else if (data.stderr) {
+      textarea.value = data.stderr;
+      status.textContent = "Script execution failed.";
+      status.style.color = "red";
     }
+  } catch (err) {
+    alert("Failed to execute script");
+    console.error(err);
+  }
+}
+
   </script>
+  
 </body>
 </html>
