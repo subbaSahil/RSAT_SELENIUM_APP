@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_file
 import os
 import zipfile
-from scriptGenerator import getScript
+from scriptGenerator2 import getScript
 from xmlConverter import extract_user_actions
 from flask_cors import CORS
 import traceback
