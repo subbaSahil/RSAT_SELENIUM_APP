@@ -708,9 +708,10 @@ test_passed = base.test_passed""",
             previous_user_action_value = value
             previous_control_label = label
     # lines.append("time.sleep(5)")
+    lines.append("     assert True")
     lines.append("except Exception as e:")
     lines.append("     test_passed = False")
-    lines.append("     print(\"Test case failed:\",e)")
+    lines.append("     raise e")
     lines.append("finally:")
     lines.append("     if test_passed:")
     lines.append("          print(\"✅ Test case passed\")")

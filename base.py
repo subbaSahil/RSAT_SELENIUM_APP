@@ -10,7 +10,7 @@ class BaseTest:
         self.driver.maximize_window()
         time.sleep(3)
         login.login(self.driver)
-        self.ActionChains = ActionChains(self.driver)
+        self.actions = ActionChains(self.driver)
         # Shared attributes
         # self.locator = ""
         self.filter_manager_column_last_opened = ""

@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)
  
 UPLOAD_FOLDER = 'uploads'
-OUTPUT_FOLDER = 'scripts'
+OUTPUT_FOLDER = 'tests'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
  

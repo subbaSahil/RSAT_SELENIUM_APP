@@ -120,9 +120,10 @@ try:
           Interactions.wait_and_click(driver, By.XPATH, "//button[@name='CheckVoucher']")
      elif(Interactions.check_element_exist(driver, By.XPATH, "//span[text()='Validate voucher only']/ancestor::button")):
           Interactions.wait_and_click(driver, By.XPATH, "//span[text()='Validate voucher only']/ancestor::button")
+     assert True
 except Exception as e:
      test_passed = False
-     print("Test case failed:",e)
+     raise e
 finally:
      if test_passed:
           print("✅ Test case passed")
