@@ -160,7 +160,7 @@ import Interactions
 import time
 base = BaseTest()
 driver = base.driver
-ActionChains = base.ActionChains
+actions = base.ActionChains
 test_passed = base.test_passed""",
         "try:"
     ]
@@ -304,7 +304,7 @@ test_passed = base.test_passed""",
                         lines.append(f"           Interactions.wait_and_click(driver, By.XPATH, \"{expand_button}\")")
                         if previous_control_type == "grid" and "LedgerDimension" in previous_control_name:
                              account_input = f"(//div[@data-dyn-controlname='{name}']//input)[{previous_user_action_value}]"
-                             lines.append(f"     ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{account_input}\")).perform()")
+                             lines.append(f"     actions(driver).move_to_element(driver.find_element(By.XPATH,\"{account_input}\")).perform()")
                              lines.append(f"     Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{account_input}\", \"{value}\")") 
                         else:
                             account_input = f"(//div[@data-dyn-controlname='{name}']//input)[1]"
@@ -314,16 +314,16 @@ test_passed = base.test_passed""",
                         lines.append(f"     if(Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[0]}\") or Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[1]}\") ):")
                         lines.append(f"          #clicking inside grid: {name}")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\", \"{value}\")")
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[1]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[1]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\", \"{value}\")")
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[3]}\")):")
-                        lines.append(f"              ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"{'('+xpath[3] +')[1]'}\")).perform()")
+                        lines.append(f"              actions(driver).move_to_element(driver.find_element(By.XPATH, \"{'('+xpath[3] +')[1]'}\")).perform()")
                         lines.append(f"              Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[3]}\", \"{value}\")")
                         lines.append(f"          else:")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"{'('+xpath[2] +')[1]'}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH, \"{'('+xpath[2] +')[1]'}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[2] +')[1]'}\", \"{value}\")")
                         lines.append(f"     else:")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[0]}\")):")
@@ -333,7 +333,7 @@ test_passed = base.test_passed""",
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[3]}\")):")
                         lines.append(f"              Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[3]}\", \"{value}\")")
                         lines.append(f"          else:")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[2]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[2]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[2]}\", \"{value}\")")
                 elif     ctype in ["input" , "referencegroup"] :
                     dailog_box_container = "//div[@class='DialogContent group editMode no-caption-group col1 fill-width layout-container layout-vertical']"
@@ -362,10 +362,10 @@ test_passed = base.test_passed""",
                         lines.append(f"     if(Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[0]}\") or Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[1]}\") ):")
                         lines.append(f"         #clicking inside grid: {name}")
                         lines.append("         if(Interactions.check_element_exist(driver, By.XPATH, \"(" + xpath[0] + ")[\" + row_number + \"]\")):")
-                        lines.append("               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"(" + xpath[0] + ")[\" + row_number + \"]\")).perform()")
+                        lines.append("               actions(driver).move_to_element(driver.find_element(By.XPATH,\"(" + xpath[0] + ")[\" + row_number + \"]\")).perform()")
                         lines.append("               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"(" + xpath[0] + ")[\" + row_number + \"]\", \"" + value + "\")")
                         lines.append("         elif(Interactions.check_element_exist(driver, By.XPATH, \"(" + xpath[1] + ")[\" + row_number + \"]\")):")
-                        lines.append("               ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"(" + xpath[1] + ")[\" + row_number + \"]\")).perform()")
+                        lines.append("               actions(driver).move_to_element(driver.find_element(By.XPATH, \"(" + xpath[1] + ")[\" + row_number + \"]\")).perform()")
                         lines.append("               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"(" + xpath[1] + ")[\" + row_number + \"]\", \"" + value + "\")")
                     elif dailog_box_line_items:
                         if new_line_item_in_dailog_box_item:
@@ -389,10 +389,10 @@ test_passed = base.test_passed""",
                         lines.append(f"     if(Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[0]}\") or Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[1]}\") ):")
                         lines.append(f"          #clicking inside grid: {name}")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\", \"{value}\")")
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[1]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH, \"{xpath[1]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\", \"{value}\")")
                         lines.append(f"     else:")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[0]}\")):")
@@ -454,10 +454,10 @@ test_passed = base.test_passed""",
                         lines.append(f"     if(Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[0]}\") or Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[1]}\") ):")
                         lines.append(f"          #clicking inside grid: {name}")
                         lines.append("           if(Interactions.check_element_exist(driver, By.XPATH, \"(" + xpath[0] + ")[\" + row_number + \"]\")):")
-                        lines.append("                 ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"("+xpath[0]+")[\" + row_number + \"]\")).perform()")
+                        lines.append("                 actions(driver).move_to_element(driver.find_element(By.XPATH, \"("+xpath[0]+")[\" + row_number + \"]\")).perform()")
                         lines.append("                 Interactions.wait_and_send_keys(driver, By.XPATH, \"("+xpath[0]+")[\" + row_number + \"]\", \""+ value + "\")")
                         lines.append("           elif(Interactions.check_element_exist(driver, By.XPATH, \"("+xpath[1]+")[\" + row_number + \"]\")):")
-                        lines.append("                 ActionChains(driver).move_to_element(driver.find_element(By.XPATH, \"("+xpath[1]+")[\" + row_number + \"]\")).perform()")
+                        lines.append("                 actions(driver).move_to_element(driver.find_element(By.XPATH, \"("+xpath[1]+")[\" + row_number + \"]\")).perform()")
                         lines.append("                 Interactions.wait_and_send_keys(driver, By.XPATH, \"("+xpath[1]+")[\" + row_number + \"]\", \""+ value + "\")")
                     elif dailog_box_line_items:
                         if new_line_item_in_dailog_box_item:
@@ -482,17 +482,17 @@ test_passed = base.test_passed""",
                         lines.append(f"     if(Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[0]}\") or Interactions.check_input_ancestor_is_table(driver, By.XPATH, \"{xpath[1]}\") ):")
                         lines.append(f"         #clicking inside grid: {name}")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{'('+xpath[0] +')[1]'}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{'('+xpath[0] +')[1]'}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[0] +')[1]'}\", \"{value}\")")
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{'('+xpath[1] +')[1]'}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{'('+xpath[1] +')[1]'}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{'('+xpath[1] +')[1]'}\", \"{value}\")")
                         lines.append(f"     else:")
                         lines.append(f"          if(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[0]}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[0]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[0]}\", \"{value}\")")
                         lines.append(f"          elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\")):")
-                        lines.append(f"               ActionChains(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[1]}\")).perform()")
+                        lines.append(f"               actions(driver).move_to_element(driver.find_element(By.XPATH,\"{xpath[1]}\")).perform()")
                         lines.append(f"               Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[1]}\", \"{value}\")")
                         lines.append(f"          Interactions.press_enter(driver, By.XPATH, \"//body\")")
                 elif ctype == "multilineinput":
@@ -598,7 +598,6 @@ test_passed = base.test_passed""",
                         lines.append(f"     Interactions.wait_and_click(driver, By.XPATH, dropDown_button)")
                         lines.append(f"     Interactions.wait_and_click(driver, By.XPATH, drop_down_item)")
                         lines.append(f"     if(Interactions.check_element_exist(driver, By.XPATH, \"//div[contains(@class,'popupShadow popupView preview')]\")):")
-                        lines.append(f"         actions = ActionChains(driver)")
                         lines.append(f"         other_element = driver.find_element(By.XPATH, \"//div[text()='\" + field_name + \"']\")")
                         lines.append(f"         actions.move_to_element(other_element).perform()")
                         lines.append(f"     if operator == 'is one of' or operator == 'matches':")
@@ -711,7 +710,7 @@ test_passed = base.test_passed""",
     # lines.append("time.sleep(5)")
     lines.append("except Exception as e:")
     lines.append("     test_passed = False")
-    lines.append("     print(\"Test case failed:\"+ e)")
+    lines.append("     print(\"Test case failed:\",e)")
     lines.append("finally:")
     lines.append("     if test_passed:")
     lines.append("          print(\"✅ Test case passed\")")
