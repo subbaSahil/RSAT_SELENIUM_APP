@@ -1,20 +1,22 @@
 import sys
 import os
+import pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from base import BaseTest
 from selenium.webdriver.common.by import By
 import Interactions
 import time
-base = BaseTest()
-driver = base.driver
-actions = base.actions
+@pytest.mark.ui
 def test():
+    base = BaseTest()
+    driver = base.driver
+    actions = base.actions
     try:
         Interactions.wait_and_click(driver, By.XPATH, "//div[@aria-label='Modules']")
 # Clicking navigation: Accounts payable
         Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Accounts payable']")
 # Clicking navigation: Purchase orders
-        Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Purchase orde']")
+        Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Purchase orders']")
 # Clicking navigation: Open prepayments
         Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Open prepayments']")
         if(Interactions.check_element_exist(driver, By.XPATH, "//button[@name='NewButton']")):

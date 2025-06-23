@@ -1,14 +1,16 @@
 import sys
 import os
+import pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from base import BaseTest
 from selenium.webdriver.common.by import By
 import Interactions
 import time
-base = BaseTest()
-driver = base.driver
-actions = base.actions
+@pytest.mark.ui
 def test():
+    base = BaseTest()
+    driver = base.driver
+    actions = base.actions
     try:
         Interactions.wait_and_click(driver, By.XPATH, "//div[@aria-label='Modules']")
 # Clicking navigation: General ledger

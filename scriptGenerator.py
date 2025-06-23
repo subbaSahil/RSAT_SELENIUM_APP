@@ -153,15 +153,17 @@ def generate_selenium_script(controls):
     lines = [
 "import sys",
 "import os",
+"import pytest",
 "sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))",
 "from base import BaseTest",
 "from selenium.webdriver.common.by import By",
 "import Interactions",
 "import time",
-"base = BaseTest()",
-"driver = base.driver",
-"actions = base.actions",
+"@pytest.mark.ui",
 "def test():",
+"    base = BaseTest()",
+"    driver = base.driver",
+"    actions = base.actions",
 "    try:"
     ]
     for i, control in enumerate(controls):
@@ -611,7 +613,7 @@ def generate_selenium_script(controls):
                         lines.append(f"            Interactions.wait_and_send_keys(driver, By.XPATH, to_date_locator, new_val[1])")
                         lines.append(f"        else:")
                         lines.append(f"            Interactions.wait_and_send_keys(driver, By.XPATH, input_field, new_val)")
-                        lines.append(f"       Interactions.wait_and_click(driver, By.XPATH, apply_button)") 
+                        lines.append(f"        Interactions.wait_and_click(driver, By.XPATH, apply_button)") 
                 elif ctype == "grid":
                     # print(previous_user_action_value)
                     # print(previous_control_type)   
