@@ -8,14 +8,13 @@ import time
 base = BaseTest()
 driver = base.driver
 actions = base.actions
-test_passed = base.test_passed
 def test():
     try:
         Interactions.wait_and_click(driver, By.XPATH, "//div[@aria-label='Modules']")
 # Clicking navigation: Accounts payable
         Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Accounts payable']")
 # Clicking navigation: Purchase orders
-        Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Purchase orders']")
+        Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Purchase orde']")
 # Clicking navigation: Open prepayments
         Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Open prepayments']")
         if(Interactions.check_element_exist(driver, By.XPATH, "//button[@name='NewButton']")):
@@ -123,13 +122,13 @@ def test():
             Interactions.wait_and_click(driver, By.XPATH, "//span[text()='Validate voucher only']/ancestor::button")
         assert True
     except Exception as e:
-        test_passed = False
+        base.test_passed = False
         raise e
     finally:
-        if test_passed:
+        if base.test_passed:
             print("✅ Test case passed")
-            Interactions.take_screenshot_on_pass(driver, "test_case_passed")
+            Interactions.take_screenshot_on_pass(driver)
         else:
             print("❌ Test case failed")
-            Interactions.take_screenshot_on_failure(driver, "test_case_failed")
+            Interactions.take_screenshot_on_failure(driver)
         driver.quit()

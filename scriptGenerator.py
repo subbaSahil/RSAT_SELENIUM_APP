@@ -161,7 +161,6 @@ def generate_selenium_script(controls):
 "base = BaseTest()",
 "driver = base.driver",
 "actions = base.actions",
-"test_passed = base.test_passed",
 "def test():",
 "    try:"
     ]
@@ -612,7 +611,7 @@ def generate_selenium_script(controls):
                         lines.append(f"            Interactions.wait_and_send_keys(driver, By.XPATH, to_date_locator, new_val[1])")
                         lines.append(f"        else:")
                         lines.append(f"            Interactions.wait_and_send_keys(driver, By.XPATH, input_field, new_val)")
-                        lines.append(f"        Interactions.wait_and_click(driver, By.XPATH, apply_button)") 
+                        lines.append(f"       Interactions.wait_and_click(driver, By.XPATH, apply_button)") 
                 elif ctype == "grid":
                     # print(previous_user_action_value)
                     # print(previous_control_type)   
@@ -709,15 +708,15 @@ def generate_selenium_script(controls):
     # lines.append("time.sleep(5)")
     lines.append("        assert True")
     lines.append("    except Exception as e:")
-    lines.append("        test_passed = False")
+    lines.append("        base.test_passed = False")
     lines.append("        raise e")
     lines.append("    finally:")
-    lines.append("        if test_passed:")
+    lines.append("        if base.test_passed:")
     lines.append("            print(\"✅ Test case passed\")")
-    lines.append("            Interactions.take_screenshot_on_pass(driver, \"test_case_passed\")")
+    lines.append("            Interactions.take_screenshot_on_pass(driver)")
     lines.append("        else:")
     lines.append("            print(\"❌ Test case failed\")")
-    lines.append("            Interactions.take_screenshot_on_failure(driver, \"test_case_failed\")")
+    lines.append("            Interactions.take_screenshot_on_failure(driver)")
     lines.append("        driver.quit()")
     return "\n".join(lines)
 def getScript(xml_path):
