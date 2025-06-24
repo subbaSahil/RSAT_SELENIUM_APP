@@ -1,2 +1,260 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<UserActionsWithDetails><UserAction Ref="i3"><Description>Go to Accounts payable &gt; Purchase orders &gt; Open prepayments.</Description><NodeId>i3</NodeId><Sequence>20</Sequence><Navigation>mainmenu</Navigation><Navigation>AccountsPayable</Navigation><Navigation>PurchaseOrders</Navigation><ControlName>No Control Name</ControlName><ControlLabel /><ControlType /><Value /><CommandName /></UserAction><UserAction Ref="i6"><Description>Click New.</Description><NodeId>i6</NodeId><Sequence>20</Sequence><ControlName>NewButton</ControlName><ControlLabel>New</ControlLabel><ControlType>MenuButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i8"><Description>Click Vendor payment journal.</Description><NodeId>i8</NodeId><Sequence>20</Sequence><ControlName>NewPaymentJournal</ControlName><ControlLabel>Vendor payment journal</ControlLabel><ControlType>MenuItem</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i11"><Description>In the list, mark the selected row.</Description><NodeId>i11</NodeId><Sequence>20</Sequence><ControlName>GridOverview</ControlName><ControlLabel /><ControlType>Grid</ControlType><Value /><CommandName>MarkActiveRow</CommandName></UserAction><UserAction Ref="i13"><Description>In the Name field, enter or select a value.</Description><NodeId>i13</NodeId><Sequence>20</Sequence><ControlName>JournalName</ControlName><ControlLabel>Name</ControlLabel><ControlType>Input</ControlType><Value>VendPay</Value><CommandName>RequestPopup</CommandName></UserAction><UserAction Ref="i17"><Description>In the list, click the link in the selected row.</Description><NodeId>i17</NodeId><Sequence>20</Sequence><ControlName>Grid</ControlName><ControlLabel /><ControlType>Grid</ControlType><Value /><CommandName>NavigationAction</CommandName></UserAction><UserAction Ref="i19"><Description>Click Save.</Description><NodeId>i19</NodeId><Sequence>20</Sequence><ControlName>SystemDefinedSaveButton</ControlName><ControlLabel>Save</ControlLabel><ControlType>CommandButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i21"><Description>Click Inquiries.</Description><NodeId>i21</NodeId><Sequence>20</Sequence><ControlName>Inquiries</ControlName><ControlLabel>Inquiries</ControlLabel><ControlType>MenuButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i23"><Description>Click Balance control.</Description><NodeId>i23</NodeId><Sequence>20</Sequence><ControlName>BalanceControl</ControlName><ControlLabel>Balance control</ControlLabel><ControlType>MenuItem</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i28"><Description>Click Close.</Description><NodeId>i28</NodeId><Sequence>20</Sequence><ControlName>Close</ControlName><ControlLabel>Close</ControlLabel><ControlType>CommandButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i30"><Description>Click Lines.</Description><NodeId>i30</NodeId><Sequence>20</Sequence><ControlName>JournalLines</ControlName><ControlLabel>Lines</ControlLabel><ControlType>MenuItemButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i33"><Description>In the list, mark the selected row.</Description><NodeId>i33</NodeId><Sequence>20</Sequence><ControlName>overviewGrid</ControlName><ControlLabel /><ControlType>Grid</ControlType><Value /><CommandName>MarkActiveRow</CommandName></UserAction><UserAction Ref="i35"><Description>In the Account field, specify the desired values.</Description><NodeId>i35</NodeId><Sequence>20</Sequence><ControlName>LedgerJournalTrans_AccountNum</ControlName><ControlLabel>Account</ControlLabel><ControlType>SegmentedEntry</ControlType><Value>checkgrid1</Value><CommandName /></UserAction><UserAction Ref="i37"><Description>Click Payment proposal.</Description><NodeId>i37</NodeId><Sequence>20</Sequence><ControlName>buttonPaymProposal</ControlName><ControlLabel>Payment proposal</ControlLabel><ControlType>MenuButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i39"><Description>Click Create payment proposal.</Description><NodeId>i39</NodeId><Sequence>20</Sequence><ControlName>VendPaymProposalCreate</ControlName><ControlLabel>Create payment proposal</ControlLabel><ControlType>MenuItem</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i42"><Description>Click OK.</Description><NodeId>i42</NodeId><Sequence>20</Sequence><ControlName>OkButton</ControlName><ControlLabel>OK</ControlLabel><ControlType>CommandButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i46"><Description>Click OK.</Description><NodeId>i46</NodeId><Sequence>20</Sequence><ControlName>CommandButton</ControlName><ControlLabel>OK</ControlLabel><ControlType>CommandButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i50"><Description>Close the page.</Description><NodeId>i50</NodeId><Sequence>20</Sequence><ControlName>No Control Name</ControlName><ControlLabel /><ControlType /><Value /><CommandName>RequestClose</CommandName><Annotations /></UserAction><UserAction Ref="i53"><Description>Click Validate.</Description><NodeId>i53</NodeId><Sequence>20</Sequence><ControlName>buttonCheckJournal</ControlName><ControlLabel>Validate</ControlLabel><ControlType>MenuButton</ControlType><Value /><CommandName>Click</CommandName></UserAction><UserAction Ref="i55"><Description>Click Validate voucher only.</Description><NodeId>i55</NodeId><Sequence>20</Sequence><ControlName>CheckVoucher</ControlName><ControlLabel>Validate voucher only</ControlLabel><ControlType>MenuItem</ControlType><Value /><CommandName>Click</CommandName></UserAction></UserActionsWithDetails>
+<UserActionsWithDetails>
+    <UserAction Ref="i3">
+        <Description>Go to Procurement and sourcing &gt; Vendors &gt; All vendors.</Description>
+        <NodeId>i3</NodeId>
+        <Sequence>25</Sequence>
+        <Navigation>mainmenu</Navigation>
+        <Navigation>ProcurementAndSourcing</Navigation>
+        <Navigation>Vendors</Navigation>
+        <ControlName>No Control Name</ControlName>
+        <ControlLabel />
+        <ControlType />
+        <Value />
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i6">
+        <Description>In the list, click the link in the selected row.</Description>
+        <NodeId>i6</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value />
+        <CommandName>NavigationAction</CommandName>
+    </UserAction>
+    <UserAction Ref="i8">
+        <Description>On the Action Pane, click Vendor.</Description>
+        <NodeId>i8</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>VendorTab</ControlName>
+        <ControlLabel>Vendor</ControlLabel>
+        <ControlType>AppBarTab</ControlType>
+        <Value />
+        <CommandName>TabShown</CommandName>
+    </UserAction>
+    <UserAction Ref="i10">
+        <Description />
+        <NodeId>i10</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>AddressGridFormPart</ControlName>
+        <ControlLabel />
+        <ControlType>Part</ControlType>
+        <Value />
+        <CommandName>OpenFormPart</CommandName>
+    </UserAction>
+    <UserAction Ref="i13">
+        <Description>Click Edit.</Description>
+        <NodeId>i13</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>EditAddress</ControlName>
+        <ControlLabel>Edit</ControlLabel>
+        <ControlType>MenuItemButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i16">
+        <Description>In the Street field, type a value.</Description>
+        <NodeId>i16</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>LogisticsPostalAddress_Street</ControlName>
+        <ControlLabel>Street</ControlLabel>
+        <ControlType>MultilineInput</ControlType>
+        <Value>711 Louisiana demo address</Value>
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i18">
+        <Description>In the Name or description field, type a value.</Description>
+        <NodeId>i18</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Details_Description</ControlName>
+        <ControlLabel>Name or description</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>Acme Office</Value>
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i20">
+        <Description>Click OK.</Description>
+        <NodeId>i20</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>OKButton</ControlName>
+        <ControlLabel>OK</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i23">
+        <Description>Use the shortcut for switching to View or Edit mode.</Description>
+        <NodeId>i23</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>No Control Name</ControlName>
+        <ControlLabel />
+        <ControlType />
+        <Value>ViewEdit</Value>
+        <CommandName>ExecuteShortcuts</CommandName>
+    </UserAction>
+    <UserAction Ref="i25">
+        <Description>Select No in the Report 1099 field.</Description>
+        <NodeId>i25</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Tax10991_Tax1099Reports</ControlName>
+        <ControlLabel>Report 1099</ControlLabel>
+        <ControlType>CheckBox</ControlType>
+        <Value>False</Value>
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i27">
+        <Description>Click Save.</Description>
+        <NodeId>i27</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>SystemDefinedSaveButton</ControlName>
+        <ControlLabel>Save</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i29">
+        <Description>Click On hold to open the drop dialog.</Description>
+        <NodeId>i29</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>OnHoldDropDialogButton</ControlName>
+        <ControlLabel>On hold</ControlLabel>
+        <ControlType>DropDialogButton</ControlType>
+        <Value />
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i32">
+        <Description>In the Vendor hold field, select an option.</Description>
+        <NodeId>i32</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>OnHold</ControlName>
+        <ControlLabel>Vendor hold</ControlLabel>
+        <ControlType>ComboBox</ControlType>
+        <Value>1</Value>
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i34">
+        <Description>Click OK.</Description>
+        <NodeId>i34</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>CommandButtonOK</ControlName>
+        <ControlLabel>OK</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i36">
+        <Description>Close the page.</Description>
+        <NodeId>i36</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>No Control Name</ControlName>
+        <ControlLabel />
+        <ControlType />
+        <Value />
+        <CommandName>RequestClose</CommandName>
+        <Annotations />
+    </UserAction>
+    <UserAction Ref="i38">
+        <Description>Go to Procurement and sourcing &gt; Purchase orders &gt; All purchase orders.</Description>
+        <NodeId>i38</NodeId>
+        <Sequence>25</Sequence>
+        <Navigation>mainmenu</Navigation>
+        <Navigation>ProcurementAndSourcing</Navigation>
+        <Navigation>PurchaseOrders</Navigation>
+        <ControlName>No Control Name</ControlName>
+        <ControlLabel />
+        <ControlType />
+        <Value />
+        <CommandName />
+    </UserAction>
+    <UserAction Ref="i41">
+        <Description>Click New.</Description>
+        <NodeId>i41</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>SystemDefinedNewButton</ControlName>
+        <ControlLabel>New</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i44">
+        <Description>In the Vendor account field, enter or select a value.</Description>
+        <NodeId>i44</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>PurchTable_OrderAccount</ControlName>
+        <ControlLabel>Vendor account</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>1001</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i48">
+        <Description>In the list, click the link in the selected row.</Description>
+        <NodeId>i48</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value />
+        <CommandName>NavigationAction</CommandName>
+    </UserAction>
+    <UserAction Ref="i50">
+        <Description>Click OK.</Description>
+        <NodeId>i50</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>OK</ControlName>
+        <ControlLabel>OK</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+    <UserAction Ref="i52">
+        <Description>In the list, mark the selected row.</Description>
+        <NodeId>i52</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>LineSpec</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value />
+        <CommandName>MarkActiveRow</CommandName>
+    </UserAction>
+    <UserAction Ref="i54">
+        <Description>In the Item number field, enter or select a value.</Description>
+        <NodeId>i54</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>PurchLine_ItemId</ControlName>
+        <ControlLabel>Item number</ControlLabel>
+        <ControlType>Input</ControlType>
+        <Value>0002</Value>
+        <CommandName>RequestPopup</CommandName>
+    </UserAction>
+    <UserAction Ref="i58">
+        <Description>In the list, select row 2.</Description>
+        <NodeId>i58</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value>2</Value>
+        <CommandName>ChangeSelectedIndexInCache</CommandName>
+    </UserAction>
+    <UserAction Ref="i60">
+        <Description>In the list, click the link in the selected row.</Description>
+        <NodeId>i60</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>Grid</ControlName>
+        <ControlLabel />
+        <ControlType>Grid</ControlType>
+        <Value />
+        <CommandName>NavigationAction</CommandName>
+    </UserAction>
+    <UserAction Ref="i62">
+        <Description>Click Save.</Description>
+        <NodeId>i62</NodeId>
+        <Sequence>25</Sequence>
+        <ControlName>SystemDefinedSaveButton</ControlName>
+        <ControlLabel>Save</ControlLabel>
+        <ControlType>CommandButton</ControlType>
+        <Value />
+        <CommandName>Click</CommandName>
+    </UserAction>
+</UserActionsWithDetails>
