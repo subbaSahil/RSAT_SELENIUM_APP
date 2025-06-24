@@ -5,7 +5,8 @@ from scriptGenerator import getScript
 from xmlConverter import extract_user_actions
 from flask_cors import CORS
 import traceback
- 
+import subprocess
+
 app = Flask(__name__)
 CORS(app)
  
@@ -53,26 +54,8 @@ def download_all_scripts():
             if file.endswith(".py"):
                 zipf.write(os.path.join(OUTPUT_FOLDER, file), arcname=file)
     return send_file(zip_path, as_attachment=True)
- 
+
 if __name__ == '__main__':
     app.run(debug=True)
  
  
-
-
-
-
- # import subprocess  # Add at top if not already
-
-# @app.route('/execute-generated-script', methods=['POST'])
-# def execute_generated_script():
-#     try:
-#         result = subprocess.run(['python', OUTPUT_SCRIPT], capture_output=True, text=True, timeout=60)
-#         return jsonify({
-#             'stdout': result.stdout,
-#             'stderr': result.stderr
-#         })
-#     except subprocess.TimeoutExpired:
-#         return jsonify({'stderr': 'Script execution timed out'}), 500
-#     except Exception as e:
-#         return jsonify({'stderr': str(e)}), 500

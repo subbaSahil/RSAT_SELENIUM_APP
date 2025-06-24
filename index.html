@@ -217,30 +217,6 @@
       }
     }
 
-    async function executeScript() {
-      const textarea = document.getElementById('fileContent');
-      const status = document.getElementById('statusMessage');
-
-      try {
-        const response = await fetch('http://localhost:5000/execute-generated-script', {
-          method: 'POST'
-        });
-
-        const data = await response.json();
-        if (data.stdout) {
-          textarea.value = data.stdout;
-          status.textContent = "Script executed successfully.";
-          status.style.color = "blue";
-        } else if (data.stderr) {
-          textarea.value = data.stderr;
-          status.textContent = "Script execution failed.";
-          status.style.color = "red";
-        }
-      } catch (err) {
-        alert("Failed to execute script");
-        console.error(err);
-      }
-    }
   </script>
 
 </body>
