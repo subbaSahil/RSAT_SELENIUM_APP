@@ -11,11 +11,13 @@ class BaseTest:
         time.sleep(3)
         login.login(self.driver)
         self.actions = ActionChains(self.driver)
-        # Shared attributes
-        # self.locator = ""
         self.filter_manager_column_last_opened = ""
         self.filter_manager_dropdown_item_index = 1
         self.column_to_open = ""
         self.user_input = None
         # self.save_line_items_without_errors = False
         self.test_passed = True
+        self.steps_count = 0
+
+    
+    

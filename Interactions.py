@@ -8,6 +8,30 @@ import re
 import os
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
+from openpyxl import Workbook, load_workbook
+
+def log_interaction(step_no, action, field, value=""):
+    file_path = os.path.join("reports", "reports.xlsx")
+
+    # Ensure the reports directory exists
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+
+    # Load or create the Excel file
+    if os.path.exists(file_path):
+        wb = load_workbook(file_path)
+        ws = wb.active
+    else:
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Test Log"
+        ws.append(["Step", "Action", "Field", "Value"])  # Header row
+
+    # Append the data
+    ws.append([step_no, action, field, value])
+
+    # Save the file
+    wb.save(file_path)
+
 
 
 def js_click(driver, by, value, timeout=10):
@@ -31,68 +55,7 @@ def extract_navigation_steps(description):
 
     return steps
 
-# def wait_and_click(driver, by, value, timeout=20):
-#     # Wait for element to be present
-#     element = WebDriverWait(driver, timeout).until(EC.presence_of_element_located((by, value)))
-#     # if(check_element_exist(driver, by, "//div[contains(@class,'popupShadow popupView preview')]")):
-#     #     element.click()
-#     # Get the aria-expanded attribute (if any)
-#     aria_expanded = element.get_attribute("aria-expanded")
-#     flag = False
-#     if(element): 
-#         flag = True
-#         if aria_expanded is not None:
-#         # print(f"aria-expanded attribute found: {aria_expanded}")
-#             if aria_expanded.lower() == "false":
-#                 driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", element)
-#                 WebDriverWait(driver, timeout).until(
-#                 EC.element_to_be_clickable((by, value))
-#             )
-#                 element.click()
-#         else:
-#             # print("aria-expanded not found. Clicking by default.")
-#             driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", element)
-#             WebDriverWait(driver, timeout).until(
-#             EC.element_to_be_clickable((by, value))
-#             )
-#             element.click()
-#     time.sleep(2)
-#     return flag;  
-
-# def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
-#     try:
-#         element = WebDriverWait(driver, timeout).until(
-#             EC.presence_of_element_located((by, base_xpath))
-#         )
-#         aria_expanded = element.get_attribute("aria-expanded")
-
-#         if aria_expanded is None or aria_expanded.lower() == "false":
-#             WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, base_xpath)))
-#             ActionChains(driver).move_to_element(element).perform()
-#             element.click()
-#             print(f"Clicked element with base_xpath: {base_xpath}")
-#             return True
-#     except Exception as e:
-#         print(f"Primary click failed on base_xpath: {base_xpath} - {str(e)}")
-
-#         if enable_fallback and base_xpath:
-#             for i in range(1, 20):
-#                 indexed_xpath = f"({base_xpath})[{i}]"
-#                 try:
-#                     fallback_element = WebDriverWait(driver, timeout).until(
-#                         EC.element_to_be_clickable((by, indexed_xpath))
-#                     )
-#                     driver.execute_script("arguments[0].click();", fallback_element)
-#                     print(f"Successfully clicked fallback element at index {i}")
-#                     return True
-#                 except Exception as ex:
-#                     print(f"Attempt {i} failed for xpath: {indexed_xpath} - {str(ex)}")
-#         else:
-#             print(f"No fallback attempted or no base_xpath provided. Exception: {str(e)}")
-    
-#     return False  # Ensure a definitive return
-
-def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
+def wait_and_click(driver, by, base_xpath, step_num = "",description="",timeout=10, enable_fallback=True):
     global last_failed_xpath
     try:
         element = WebDriverWait(driver, timeout).until(
@@ -104,6 +67,8 @@ def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
             WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, base_xpath)))
             ActionChains(driver).move_to_element(element).perform()
             element.click()
+            if(description!="" and step_num != ""):
+                log_interaction(step_num, "Click", description)
             print(f"✅ Clicked element with base_xpath: {base_xpath}")
             return True
     except Exception as e:
@@ -119,19 +84,17 @@ def wait_and_click(driver, by, base_xpath, timeout=10, enable_fallback=True):
                         EC.element_to_be_clickable((by, indexed_xpath))
                     )
                     driver.execute_script("arguments[0].click();", fallback_element)
-                    # print(f"✅ Successfully clicked fallback element at index {i}")
+                    if(description!="" and step_num != ""):
+                        log_interaction(step_num, "Click (fallback)", description)
                     return True
                 except Exception as ex:
                     print(f"❌ Attempt {i} failed for xpath: {indexed_xpath} - {str(ex)}")
         
-        # After fallback also fails
         print(f"❌ All attempts failed for base_xpath: {base_xpath}")
         take_screenshot_on_failure(driver)
         last_failed_xpath = base_xpath
         driver.quit()
         return False
-
-
         
 def hover_on_an_element(driver, by, value, timeout=10):
     element = WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, value)))
@@ -159,7 +122,7 @@ def mouse_click(driver, by, value, timeout=10):
 #     time.sleep(1)
     # element.send_keys(Keys.RETURN)
 
-def wait_and_send_keys(driver, by, value, keys, timeout=20):
+def wait_and_send_keys(driver, by, value, keys, step_num = "" ,description="",timeout=20):
     global last_failed_xpath
     try:
         element = WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, value)))
@@ -167,7 +130,8 @@ def wait_and_send_keys(driver, by, value, keys, timeout=20):
         time.sleep(0.5)
         element.click()
         element.send_keys(keys)
-        # print(f"✅ Successfully sent keys to XPath: {value}")
+        if(description != "" and step_num != ""):
+            log_interaction(step_num, "Send Keys", description, keys)
         time.sleep(1)
     except Exception as e:
         last_failed_xpath = value
@@ -215,7 +179,7 @@ def checkInputExpanded(driver, by, value, timeout=10):
 #         print(f"Error in clear_input_field_and_send_keys: {e}")
 
 
-def clear_input_field_and_send_keys(driver, by, value, keys, timeout=20):
+def clear_input_field_and_send_keys(driver, by, value, keys, step_num="",description="",timeout=20):
     global last_failed_xpath
     try:
         element = WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, value)))
@@ -224,6 +188,9 @@ def clear_input_field_and_send_keys(driver, by, value, keys, timeout=20):
         element.send_keys(Keys.CONTROL + "a")
         element.send_keys(Keys.DELETE)
         element.send_keys(keys)
+        if(description != "" and step_num != ""):
+            log_interaction(step_num, "Send Keys", description, keys)
+        # base_test.steps_count += 1
         # print(f"✅ Successfully entered text at XPath: {value}")
         time.sleep(1)  # Give the page time to register input
 
