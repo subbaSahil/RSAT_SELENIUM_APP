@@ -1,0 +1,69 @@
+Login Successful as user1
+✅ Clicked element with base_xpath: //div[@aria-label='Modules']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Accounts payable']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Pending vendor invoices']
+✅ Clicked element with base_xpath: //button[@name='NewInvoice']
+✅ Clicked element with base_xpath: //input[contains(@name,'PurchParmTable_PurchAggHeader')]/parent::div/parent::div/following-sibling::div/div
+✅ Clicked element with base_xpath: //input[contains(@name,'PurchParmTable_PurchAggHeader')]/parent::div/parent::div/following-sibling::div/div
+Multiple elements found
+❌ Error in clear_input_field_and_send_keys at XPath: //input[contains(@name,'VendInvoiceInfoTable_ReceivedDate')] - Message: element click intercepted: Element <input class="textbox field displayoption viewMarker alignmentLeft" type="text" role="combobox" autocomplete="off" data-dyn-bind="
+                attr: {
+                    name: $data.Name,
+                    placeholder: $data.PlaceHolder,
+                    'aria-describedby': $dyn.ui.getDescribedByData($data),
+                    'aria-invalid': !$dyn.value($data.IsValid),
+                },
+                id: $data.Id + '_input',
+                ariaLabelledBy: $data.getLabelledByData(),
+                required: $data.Required,
+                boundValue: { binder: $data.valueBinder, changeMode: $data.ChangeMode },
+                link: $dyn.ui.link($data),
+                secondaryNavigation: { keyboard: $data.OnKeyboardSecondaryNavigation, mouse: $data.OnMouseSecondaryNavigation },
+                title: $data.toolTip,
+                skip: $dyn.ui.skip($data),
+                allowEdit: $data.AllowEdit,
+                enabled: $data.Enabled,
+                textAlign: $data.Alignment,
+                keyDown: $data.keyDown,
+                keyUp: $data.keyUp,
+                input: $data.onInput,
+                preview: $dyn.ui.preview($data),
+                foregroundColor: $data.ForegroundColor,
+                backgroundColor: $data.BackgroundColor,
+                css: { 'validationFailed': $data.IsShowingWarningIndicator },
+                superTooltip: $dyn.ui.superTooltip($data)" aria-haspopup="dialog" aria-controls="ui-datepicker-div" aria-expanded="false" name="VendInvoiceInfoTable_ReceivedDate" placeholder="" aria-describedby="VendEditInvoice_3_VendInvoiceInfoTable_ReceivedDate_helptext" aria-invalid="false" id="VendEditInvoice_3_VendInvoiceInfoTable_ReceivedDate_input" aria-labelledby="VendEditInvoice_3_VendInvoiceInfoTable_ReceivedDate_label" tabindex="0" data-dynamics-input-alignment="Left" dyn-data-supertooltip="true"> is not clickable at point (543, 369). Other element would receive the click: <div class="fixedDataTableLayout_rowsContainer" style="height: 210px; width: 204px;">...</div>
+  (Session info: chrome=138.0.7204.96)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7dea06f95+76917]
+	GetHandleVerifier [0x0x7ff7dea06ff0+77008]
+	(No symbol) [0x0x7ff7de7b9dea]
+	(No symbol) [0x0x7ff7de818269]
+	(No symbol) [0x0x7ff7de815c02]
+	(No symbol) [0x0x7ff7de812c41]
+	(No symbol) [0x0x7ff7de811b31]
+	(No symbol) [0x0x7ff7de803368]
+	(No symbol) [0x0x7ff7de83846a]
+	(No symbol) [0x0x7ff7de802c16]
+	(No symbol) [0x0x7ff7de838680]
+	(No symbol) [0x0x7ff7de86065c]
+	(No symbol) [0x0x7ff7de838243]
+	(No symbol) [0x0x7ff7de801431]
+	(No symbol) [0x0x7ff7de8021c3]
+	GetHandleVerifier [0x0x7ff7decdd2cd+3051437]
+	GetHandleVerifier [0x0x7ff7decd7923+3028483]
+	GetHandleVerifier [0x0x7ff7decf58bd+3151261]
+	GetHandleVerifier [0x0x7ff7dea2185e+185662]
+	GetHandleVerifier [0x0x7ff7dea2971f+218111]
+	GetHandleVerifier [0x0x7ff7dea0fb14+112628]
+	GetHandleVerifier [0x0x7ff7dea0fcc9+113065]
+	GetHandleVerifier [0x0x7ff7de9f6c98+10616]
+	BaseThreadInitThunk [0x0x7ffe3911e8d7+23]
+	RtlUserThreadStart [0x0x7ffe39f9c34c+44]
+
+📸 Screenshot saved: reports/screens\script_data_driven_invoice_test_20250704_174755.png
+Multiple elements found
+✅ Clicked element with base_xpath: //label[contains(text(),'On hold')]/following-sibling::div/span[1]
+✅ Clicked element with base_xpath: //label[contains(text(),'Allow matched invoice line quantity deduction')]/following-sibling::div/span[1]
+✅ Test case passed
+📸 Screenshot saved: reports/screens\script_data_driven_invoice_test_20250704_174907.png
+🎥 Saved recording: reports/recordings\script_data_driven_invoice_test_174446.mp4

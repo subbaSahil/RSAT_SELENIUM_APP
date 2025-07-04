@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="283.448" timestamp="2025-07-04T17:44:27.564140+05:30" hostname="PSDLAP373"><testcase classname="tests.script_data_driven_invoice_test" name="test" time="282.293" /></testsuite></testsuites>

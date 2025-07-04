@@ -1,0 +1,1496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>d87b0144-9ef1-4f19-9a79-c6cb3bf56b4d</CanonicalId>
+  <CurrentSequence>109</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>17989_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendEditInvoice</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>1</FormViewOptionType>
+            <MenuItemLabel>Vendor invoice</MenuItemLabel>
+            <MenuItemName>PurchFormLetter_NewInvoiceDisplay</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>17989_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendEditInvoice</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendEditInvoice</RecordingName>
+        <Sequence>2</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>15678_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendInvoiceInfoListPage</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>Pending vendor invoices</MenuItemLabel>
+            <MenuItemName>VendInvoiceInfoListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>15678_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendInvoiceInfoListPage</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendInvoiceInfoListPage</RecordingName>
+        <Sequence>7</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>20789_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendInvoiceInfoListPage</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>Pending vendor invoices</MenuItemLabel>
+            <MenuItemName>VendInvoiceInfoListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>20789_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendInvoiceInfoListPage</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendInvoiceInfoListPage</RecordingName>
+        <Sequence>13</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>23062_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendEditInvoice</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>1</FormViewOptionType>
+            <MenuItemLabel>Vendor invoice</MenuItemLabel>
+            <MenuItemName>PurchFormLetter_NewInvoiceDisplay</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>23062_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendEditInvoice</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendEditInvoice</RecordingName>
+        <Sequence>19</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>23453_VendEditInvoice__CompanyLookup_SysTCL_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations i:nil="true" />
+        <FormID>23453_VendEditInvoice__CompanyLookup_SysTCL_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName></FormName>
+        <HasMetadata>false</HasMetadata>
+        <RecordingName>VendEditInvoice__CompanyLookup_SysTCL</RecordingName>
+        <Sequence>32</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>23555_SysOperationSandboxForm_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations i:nil="true" />
+        <FormID>23555_SysOperationSandboxForm_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>SysOperationSandboxForm</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>SysOperationSandboxForm</RecordingName>
+        <Sequence>40</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>VendEditInvoice</ConfigurationOwnerName>
+            <ConfigurationScope>41</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>1</FormViewOptionType>
+            <MenuItemLabel>Vendor invoice</MenuItemLabel>
+            <MenuItemName>PurchFormLetter_NewInvoiceDisplay</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendEditInvoice</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendEditInvoice</RecordingName>
+        <Sequence>42</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>23955_VendTableLookup_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations i:nil="true" />
+        <FormID>23955_VendTableLookup_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>VendTableLookup</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>VendTableLookup</RecordingName>
+        <Sequence>55</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>24004_PurchIdLookup_282a9c6e-912e-4223-a124-201b27753dd5</d2p1:Key>
+      <d2p1:Value>
+        <Annotations i:nil="true" />
+        <FormID>24004_PurchIdLookup_282a9c6e-912e-4223-a124-201b27753dd5</FormID>
+        <FormName>PurchIdLookup</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>PurchIdLookup</RecordingName>
+        <Sequence>68</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>data_driven_invoice</Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>282a9c6e-912e-4223-a124-201b27753dd5</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>17989_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>1</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>17989RequestClose_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>1</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>3</Sequence>
+            <Children>
+              <Node z:Id="i4" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Close the page.</Description>
+                <Id>17989RequestClose_282a9c6e-912e-4223-a124-201b27753dd5x4</Id>
+                <Parent z:Ref="i3" />
+                <ParentSequence>3</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>4</Sequence>
+                <Annotations />
+                <GlobalId>2bfaf32a-c44f-4826-bceb-45fe2dca3d54</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>17989_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>RequestClose</CommandName>
+                <ControlName></ControlName>
+                <ControlType></ControlType>
+                <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>RequestClose</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>VendEditInvoice</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+      <Node z:Id="i5" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>15678_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>6</Sequence>
+        <Children>
+          <Node z:Id="i6" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>15678RequestClose_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+            <Parent z:Ref="i5" />
+            <ParentSequence>6</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>8</Sequence>
+            <Children>
+              <Node z:Id="i7" i:type="CommandUserAction">
+                <CustomDescription i:nil="true" />
+                <Description>Close the page.</Description>
+                <Id>15678RequestClose_282a9c6e-912e-4223-a124-201b27753dd5x9</Id>
+                <Parent z:Ref="i6" />
+                <ParentSequence>8</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>9</Sequence>
+                <Annotations />
+                <GlobalId>a13ef375-05b1-407e-8da1-7660106e5aba</GlobalId>
+                <SystemGenerated>false</SystemGenerated>
+                <ControlLabel></ControlLabel>
+                <ControlLabelId></ControlLabelId>
+                <FormId>15678_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                <ListContext i:nil="true" />
+                <RowIndex i:nil="true" />
+                <Arguments />
+                <CommandName>RequestClose</CommandName>
+                <ControlName></ControlName>
+                <ControlType></ControlType>
+                <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                <ReturnType>Void</ReturnType>
+                <ReturnValue i:nil="true" />
+                <TaskId i:nil="true" />
+              </Node>
+            </Children>
+            <IsForm>false</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>RequestClose</Name>
+            <ScopeType>Private</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>true</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>VendInvoiceInfoListPage</Name>
+        <ScopeType>Public</ScopeType>
+      </Node>
+      <Node z:Id="i8" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>MenuItemvendinvoiceinfolistpage_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>10</Sequence>
+        <Children>
+          <Node z:Id="i9" i:type="MenuItemUserAction">
+            <CustomDescription i:nil="true" />
+            <Description>Go to Accounts payable &gt; Invoices &gt; Pending vendor invoices.</Description>
+            <Id>MenuItemvendinvoiceinfolistpage_282a9c6e-912e-4223-a124-201b27753dd5x11</Id>
+            <Parent z:Ref="i8" />
+            <ParentSequence>10</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>11</Sequence>
+            <Annotations />
+            <GlobalId>c7759842-0299-48cc-b32f-8eec081bbcad</GlobalId>
+            <SystemGenerated>false</SystemGenerated>
+            <MenuItemName>vendinvoiceinfolistpage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <NavigationPath xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <d7p1:string>mainmenu</d7p1:string>
+              <d7p1:string>AccountsPayable</d7p1:string>
+              <d7p1:string>VendorInvoices</d7p1:string>
+            </NavigationPath>
+          </Node>
+          <Node z:Id="i10" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>20789_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+            <Parent z:Ref="i8" />
+            <ParentSequence>10</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>12</Sequence>
+            <Children>
+              <Node z:Id="i11" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>21243Click_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                <Parent z:Ref="i10" />
+                <ParentSequence>15</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>16</Sequence>
+                <Children>
+                  <Node z:Id="i12" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>Click New.</Description>
+                    <Id>21243Click_282a9c6e-912e-4223-a124-201b27753dd5x17</Id>
+                    <Parent z:Ref="i11" />
+                    <ParentSequence>16</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>17</Sequence>
+                    <Annotations />
+                    <GlobalId>1d5f4678-f917-451f-82d0-f45566c20bd2</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel>New</ControlLabel>
+                    <ControlLabelId>@AccountsPayable:New</ControlLabelId>
+                    <FormId>20789_VendInvoiceInfoListPage_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>Click</CommandName>
+                    <ControlName>NewInvoice</ControlName>
+                    <ControlType>MenuItemButton</ControlType>
+                    <LabelId></LabelId>
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue i:nil="true" />
+                    <TaskId i:nil="true" />
+                  </Node>
+                  <Node z:Id="i13" i:type="Scope">
+                    <CustomDescription i:nil="true" />
+                    <Description></Description>
+                    <Id>23062_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                    <Parent z:Ref="i11" />
+                    <ParentSequence>16</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>18</Sequence>
+                    <Children>
+                      <Node z:Id="i14" i:type="Scope">
+                        <CustomDescription i:nil="true" />
+                        <Description i:nil="true" />
+                        <Id>23350RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                        <Parent z:Ref="i13" />
+                        <ParentSequence>29</ParentSequence>
+                        <ScreenshotUri i:nil="true" />
+                        <Sequence>30</Sequence>
+                        <Children>
+                          <Node z:Id="i15" i:type="CommandUserAction">
+                            <CustomDescription i:nil="true" />
+                            <Description>In the Company field, enter or select a value.</Description>
+                            <Id>23350RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5x31</Id>
+                            <Parent z:Ref="i14" />
+                            <ParentSequence>30</ParentSequence>
+                            <ScreenshotUri i:nil="true" />
+                            <Sequence>31</Sequence>
+                            <Annotations>
+                              <Annotation i:type="CanonicalActionAnnotation">
+                                <CanonicalUserAction z:Id="i16" i:type="PropertyUserAction">
+                                  <CustomDescription i:nil="true" />
+                                  <Description i:nil="true" />
+                                  <Id i:nil="true" />
+                                  <Parent i:nil="true" />
+                                  <ParentSequence>0</ParentSequence>
+                                  <ScreenshotUri i:nil="true" />
+                                  <Sequence>0</Sequence>
+                                  <Annotations>
+                                    <Annotation i:type="LookupAnnotation">
+                                      <ParentFormName>VendEditInvoice</ParentFormName>
+                                      <ReferenceDataSource i:nil="true" />
+                                      <TableName>MyLegalEntities</TableName>
+                                    </Annotation>
+                                  </Annotations>
+                                  <GlobalId>8ca56474-b243-4f54-996e-f3ae66ae5f22</GlobalId>
+                                  <SystemGenerated>false</SystemGenerated>
+                                  <ControlLabel>Company</ControlLabel>
+                                  <ControlLabelId></ControlLabelId>
+                                  <FormId>23062_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                  <ListContext i:nil="true" />
+                                  <RowIndex i:nil="true" />
+                                  <BoundDataSource></BoundDataSource>
+                                  <BoundProperty></BoundProperty>
+                                  <ControlName>CompanyLookup</ControlName>
+                                  <ControlType>Input</ControlType>
+                                  <IsReference>false</IsReference>
+                                  <LabelId i:nil="true" />
+                                  <PropertyName>Value</PropertyName>
+                                  <UserActionType>Input</UserActionType>
+                                  <Value>GLCO</Value>
+                                  <ValueLabel i:nil="true" />
+                                </CanonicalUserAction>
+                              </Annotation>
+                            </Annotations>
+                            <GlobalId>81ff66ac-f2a7-4f7b-9e1d-d5f603347b4a</GlobalId>
+                            <SystemGenerated>false</SystemGenerated>
+                            <ControlLabel>Company</ControlLabel>
+                            <ControlLabelId></ControlLabelId>
+                            <FormId>23062_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                            <ListContext i:nil="true" />
+                            <RowIndex i:nil="true" />
+                            <Arguments />
+                            <CommandName>RequestPopup</CommandName>
+                            <ControlName>CompanyLookup</ControlName>
+                            <ControlType>Input</ControlType>
+                            <LabelId>@SysTaskRecorder:SetValueFromLookUp</LabelId>
+                            <ReturnType>Void</ReturnType>
+                            <ReturnValue i:nil="true" />
+                            <TaskId i:nil="true" />
+                          </Node>
+                          <Node z:Id="i17" i:type="Scope">
+                            <CustomDescription i:nil="true" />
+                            <Description></Description>
+                            <Id>23453_VendEditInvoice__CompanyLookup_SysTCL_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                            <Parent z:Ref="i14" />
+                            <ParentSequence>30</ParentSequence>
+                            <ScreenshotUri i:nil="true" />
+                            <Sequence>33</Sequence>
+                            <Children>
+                              <Node z:Id="i18" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23509ChangeSelectedIndexInCache_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i17" />
+                                <ParentSequence>34</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>35</Sequence>
+                                <Children>
+                                  <Node z:Id="i19" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the list, select row 2.</Description>
+                                    <Id>23509ChangeSelectedIndexInCache_282a9c6e-912e-4223-a124-201b27753dd5x36</Id>
+                                    <Parent z:Ref="i18" />
+                                    <ParentSequence>35</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>36</Sequence>
+                                    <Annotations>
+                                      <Annotation i:type="TaskGuideAnnotation">
+                                        <Description i:nil="true" />
+                                        <ExampleText i:nil="true" />
+                                        <GlobalId i:nil="true" />
+                                        <Hidden>true</Hidden>
+                                        <RecordingValueType>Preferred</RecordingValueType>
+                                        <Title i:nil="true" />
+                                      </Annotation>
+                                    </Annotations>
+                                    <GlobalId>3c706a18-6d20-4e3f-80d5-07c1c7c8c8b7</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel></ControlLabel>
+                                    <ControlLabelId></ControlLabelId>
+                                    <FormId>23453_VendEditInvoice__CompanyLookup_SysTCL_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext>Grid</ListContext>
+                                    <RowIndex i:nil="true" />
+                                    <Arguments>
+                                      <CommandArgument>
+                                        <IsReference>false</IsReference>
+                                        <Value>2</Value>
+                                      </CommandArgument>
+                                      <CommandArgument>
+                                        <IsReference>false</IsReference>
+                                        <Value>4</Value>
+                                      </CommandArgument>
+                                      <CommandArgument>
+                                        <IsReference>false</IsReference>
+                                        <Value>1</Value>
+                                      </CommandArgument>
+                                      <CommandArgument>
+                                        <IsReference>false</IsReference>
+                                        <Value>first</Value>
+                                      </CommandArgument>
+                                    </Arguments>
+                                    <CommandName>ChangeSelectedIndexInCache</CommandName>
+                                    <ControlName>Grid</ControlName>
+                                    <ControlType>Grid</ControlType>
+                                    <LabelId></LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>Grid_ChangeSelectedIndexInCache</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i20" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23509NavigationAction_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i17" />
+                                <ParentSequence>34</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>37</Sequence>
+                                <Children>
+                                  <Node z:Id="i21" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the list, click the link in the selected row.</Description>
+                                    <Id>23509NavigationAction_282a9c6e-912e-4223-a124-201b27753dd5x38</Id>
+                                    <Parent z:Ref="i20" />
+                                    <ParentSequence>37</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>38</Sequence>
+                                    <Annotations>
+                                      <Annotation i:type="TaskGuideAnnotation">
+                                        <Description i:nil="true" />
+                                        <ExampleText i:nil="true" />
+                                        <GlobalId i:nil="true" />
+                                        <Hidden>true</Hidden>
+                                        <RecordingValueType>Preferred</RecordingValueType>
+                                        <Title i:nil="true" />
+                                      </Annotation>
+                                    </Annotations>
+                                    <GlobalId>e680c347-87db-4e97-8775-cbfdd89edc06</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel></ControlLabel>
+                                    <ControlLabelId></ControlLabelId>
+                                    <FormId>23453_VendEditInvoice__CompanyLookup_SysTCL_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext>Grid</ListContext>
+                                    <RowIndex i:nil="true" />
+                                    <Arguments />
+                                    <CommandName>NavigationAction</CommandName>
+                                    <ControlName>Grid</ControlName>
+                                    <ControlType>Grid</ControlType>
+                                    <LabelId></LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>Grid_NavigationAction</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                            </Children>
+                            <IsForm>true</IsForm>
+                            <IsStepGroup>false</IsStepGroup>
+                            <Name>VendEditInvoice__CompanyLookup_SysTCL</Name>
+                            <ScopeType>Private</ScopeType>
+                          </Node>
+                        </Children>
+                        <IsForm>false</IsForm>
+                        <IsStepGroup>true</IsStepGroup>
+                        <Name>CompanyLookup_RequestPopup</Name>
+                        <ScopeType>Private</ScopeType>
+                      </Node>
+                      <Node z:Id="i22" i:type="Scope">
+                        <CustomDescription i:nil="true" />
+                        <Description></Description>
+                        <Id>23555_SysOperationSandboxForm_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                        <Parent z:Ref="i13" />
+                        <ParentSequence>18</ParentSequence>
+                        <ScreenshotUri i:nil="true" />
+                        <Sequence>39</Sequence>
+                        <Children>
+                          <Node z:Id="i23" i:type="Scope">
+                            <CustomDescription i:nil="true" />
+                            <Description></Description>
+                            <Id>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                            <Parent z:Ref="i22" />
+                            <ParentSequence>39</ParentSequence>
+                            <ScreenshotUri i:nil="true" />
+                            <Sequence>41</Sequence>
+                            <Children>
+                              <Node z:Id="i24" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description i:nil="true" />
+                                <Id>23812RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>52</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>53</Sequence>
+                                <Children>
+                                  <Node z:Id="i25" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Invoice account field, enter or select a value.</Description>
+                                    <Id>23812RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5x54</Id>
+                                    <Parent z:Ref="i24" />
+                                    <ParentSequence>53</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>54</Sequence>
+                                    <Annotations />
+                                    <GlobalId>5433b1a6-b237-4142-b05f-df8d6a6b4bd0</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Invoice account</ControlLabel>
+                                    <ControlLabelId>@SYS25420</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <Arguments />
+                                    <CommandName>RequestPopup</CommandName>
+                                    <ControlName>PurchParmTable_InvoiceAccount</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <LabelId>@SysTaskRecorder:SetValueFromLookUp</LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                  <Node z:Id="i26" i:type="Scope">
+                                    <CustomDescription i:nil="true" />
+                                    <Description></Description>
+                                    <Id>23955_VendTableLookup_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                    <Parent z:Ref="i24" />
+                                    <ParentSequence>53</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>56</Sequence>
+                                    <Children>
+                                      <Node z:Id="i27" i:type="Scope">
+                                        <CustomDescription i:nil="true" />
+                                        <Description></Description>
+                                        <Id>23955RequestClose_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                        <Parent z:Ref="i26" />
+                                        <ParentSequence>56</ParentSequence>
+                                        <ScreenshotUri i:nil="true" />
+                                        <Sequence>57</Sequence>
+                                        <Children>
+                                          <Node z:Id="i28" i:type="CommandUserAction">
+                                            <CustomDescription i:nil="true" />
+                                            <Description>Close the page.</Description>
+                                            <Id>23955RequestClose_282a9c6e-912e-4223-a124-201b27753dd5x58</Id>
+                                            <Parent z:Ref="i27" />
+                                            <ParentSequence>57</ParentSequence>
+                                            <ScreenshotUri i:nil="true" />
+                                            <Sequence>58</Sequence>
+                                            <Annotations>
+                                              <Annotation i:type="TaskGuideAnnotation">
+                                                <Description i:nil="true" />
+                                                <ExampleText i:nil="true" />
+                                                <GlobalId i:nil="true" />
+                                                <Hidden>true</Hidden>
+                                                <RecordingValueType>Preferred</RecordingValueType>
+                                                <Title i:nil="true" />
+                                              </Annotation>
+                                            </Annotations>
+                                            <GlobalId>c05a88dc-4505-4733-9b7b-2533ffe726ca</GlobalId>
+                                            <SystemGenerated>false</SystemGenerated>
+                                            <ControlLabel></ControlLabel>
+                                            <ControlLabelId></ControlLabelId>
+                                            <FormId>23955_VendTableLookup_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                            <ListContext i:nil="true" />
+                                            <RowIndex i:nil="true" />
+                                            <Arguments />
+                                            <CommandName>RequestClose</CommandName>
+                                            <ControlName></ControlName>
+                                            <ControlType></ControlType>
+                                            <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                                            <ReturnType>Void</ReturnType>
+                                            <ReturnValue i:nil="true" />
+                                            <TaskId i:nil="true" />
+                                          </Node>
+                                        </Children>
+                                        <IsForm>false</IsForm>
+                                        <IsStepGroup>false</IsStepGroup>
+                                        <Name>RequestClose</Name>
+                                        <ScopeType>Private</ScopeType>
+                                      </Node>
+                                    </Children>
+                                    <IsForm>true</IsForm>
+                                    <IsStepGroup>false</IsStepGroup>
+                                    <Name>VendTableLookup</Name>
+                                    <ScopeType>Private</ScopeType>
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>true</IsStepGroup>
+                                <Name>PurchParmTable_InvoiceAccount_RequestPopup</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i29" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23815Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>59</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>60</Sequence>
+                                <Children>
+                                  <Node z:Id="i30" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Number field, type a value.</Description>
+                                    <Id>23815Value_282a9c6e-912e-4223-a124-201b27753dd5x61</Id>
+                                    <Parent z:Ref="i29" />
+                                    <ParentSequence>60</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>61</Sequence>
+                                    <Annotations />
+                                    <GlobalId>142b5534-17d9-4137-8570-7f8372577a18</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Number</ControlLabel>
+                                    <ControlLabelId>@SYS13864</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>Num</BoundProperty>
+                                    <ControlName>PurchParmTable_Num</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>123</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_Num_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i31" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23817Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>62</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>63</Sequence>
+                                <Children>
+                                  <Node z:Id="i32" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Invoice description field, type a value.</Description>
+                                    <Id>23817Value_282a9c6e-912e-4223-a124-201b27753dd5x64</Id>
+                                    <Parent z:Ref="i31" />
+                                    <ParentSequence>63</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>64</Sequence>
+                                    <Annotations />
+                                    <GlobalId>42c7b9bb-0186-40b6-b3a5-fe4d93919eca</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Invoice description</ControlLabel>
+                                    <ControlLabelId>@SYS128425</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>Description</BoundProperty>
+                                    <ControlName>InvoiceDetails_Description</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>3123</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>InvoiceDetails_Description_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i33" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description i:nil="true" />
+                                <Id>23820RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>65</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>66</Sequence>
+                                <Children>
+                                  <Node z:Id="i34" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Purchase order field, enter or select a value.</Description>
+                                    <Id>23820RequestPopup_282a9c6e-912e-4223-a124-201b27753dd5x67</Id>
+                                    <Parent z:Ref="i33" />
+                                    <ParentSequence>66</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>67</Sequence>
+                                    <Annotations />
+                                    <GlobalId>1182e3bf-103c-4938-bfb5-4b4be9a159ad</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase order</ControlLabel>
+                                    <ControlLabelId>@SYS15812</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <Arguments />
+                                    <CommandName>RequestPopup</CommandName>
+                                    <ControlName>PurchParmTable_PurchId</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <LabelId>@SysTaskRecorder:SetValueFromLookUp</LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                  <Node z:Id="i35" i:type="Scope">
+                                    <CustomDescription i:nil="true" />
+                                    <Description></Description>
+                                    <Id>24004_PurchIdLookup_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                    <Parent z:Ref="i33" />
+                                    <ParentSequence>66</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>69</Sequence>
+                                    <Children>
+                                      <Node z:Id="i36" i:type="Scope">
+                                        <CustomDescription i:nil="true" />
+                                        <Description></Description>
+                                        <Id>24004RequestClose_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                        <Parent z:Ref="i35" />
+                                        <ParentSequence>69</ParentSequence>
+                                        <ScreenshotUri i:nil="true" />
+                                        <Sequence>70</Sequence>
+                                        <Children>
+                                          <Node z:Id="i37" i:type="CommandUserAction">
+                                            <CustomDescription i:nil="true" />
+                                            <Description>Close the page.</Description>
+                                            <Id>24004RequestClose_282a9c6e-912e-4223-a124-201b27753dd5x71</Id>
+                                            <Parent z:Ref="i36" />
+                                            <ParentSequence>70</ParentSequence>
+                                            <ScreenshotUri i:nil="true" />
+                                            <Sequence>71</Sequence>
+                                            <Annotations>
+                                              <Annotation i:type="TaskGuideAnnotation">
+                                                <Description i:nil="true" />
+                                                <ExampleText i:nil="true" />
+                                                <GlobalId i:nil="true" />
+                                                <Hidden>true</Hidden>
+                                                <RecordingValueType>Preferred</RecordingValueType>
+                                                <Title i:nil="true" />
+                                              </Annotation>
+                                            </Annotations>
+                                            <GlobalId>bff7f85a-5016-4aaf-be90-2f0966ec9d4a</GlobalId>
+                                            <SystemGenerated>false</SystemGenerated>
+                                            <ControlLabel></ControlLabel>
+                                            <ControlLabelId></ControlLabelId>
+                                            <FormId>24004_PurchIdLookup_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                            <ListContext i:nil="true" />
+                                            <RowIndex i:nil="true" />
+                                            <Arguments />
+                                            <CommandName>RequestClose</CommandName>
+                                            <ControlName></ControlName>
+                                            <ControlType></ControlType>
+                                            <LabelId>@SysTaskRecorder:CloseForm</LabelId>
+                                            <ReturnType>Void</ReturnType>
+                                            <ReturnValue i:nil="true" />
+                                            <TaskId i:nil="true" />
+                                          </Node>
+                                        </Children>
+                                        <IsForm>false</IsForm>
+                                        <IsStepGroup>false</IsStepGroup>
+                                        <Name>RequestClose</Name>
+                                        <ScopeType>Private</ScopeType>
+                                      </Node>
+                                    </Children>
+                                    <IsForm>true</IsForm>
+                                    <IsStepGroup>false</IsStepGroup>
+                                    <Name>PurchIdLookup</Name>
+                                    <ScopeType>Private</ScopeType>
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>true</IsStepGroup>
+                                <Name>PurchParmTable_PurchId_RequestPopup</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i38" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23820Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>65</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>72</Sequence>
+                                <Children>
+                                  <Node z:Id="i39" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Purchase order field, type a value.</Description>
+                                    <Id>23820Value_282a9c6e-912e-4223-a124-201b27753dd5x73</Id>
+                                    <Parent z:Ref="i38" />
+                                    <ParentSequence>72</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>73</Sequence>
+                                    <Annotations />
+                                    <GlobalId>3f5239c0-9761-4478-9638-8d2d49266005</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase order</ControlLabel>
+                                    <ControlLabelId>@SYS15812</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>editPurchId</BoundProperty>
+                                    <ControlName>PurchParmTable_PurchId</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>asdas</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchId_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i40" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23824Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>74</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>75</Sequence>
+                                <Children>
+                                  <Node z:Id="i41" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Purchase agreement field, type a value.</Description>
+                                    <Id>23824Value_282a9c6e-912e-4223-a124-201b27753dd5x76</Id>
+                                    <Parent z:Ref="i40" />
+                                    <ParentSequence>75</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>76</Sequence>
+                                    <Annotations />
+                                    <GlobalId>f40a1dc6-d985-4120-91f8-7e2463f9e040</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase agreement</ControlLabel>
+                                    <ControlLabelId>@SYS190134</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>Ref_PurchAgreementHeader_PurchAgreementHeader_PSN</BoundDataSource>
+                                    <BoundProperty>PurchNumberSequence</BoundProperty>
+                                    <ControlName>PurchParmTable_PurchAggHeader_PurchNumberSequence</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>asd</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchAggHeader_PurchNumberSequence_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i42" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23823ResolveChanges_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>77</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>78</Sequence>
+                                <Children>
+                                  <Node z:Id="i43" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>ResolveChanges the Purchase agreement.</Description>
+                                    <Id>23823ResolveChanges_282a9c6e-912e-4223-a124-201b27753dd5x79</Id>
+                                    <Parent z:Ref="i42" />
+                                    <ParentSequence>78</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>79</Sequence>
+                                    <Annotations />
+                                    <GlobalId>151ce2ac-53da-4f87-a133-c062baac3568</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase agreement</ControlLabel>
+                                    <ControlLabelId>@SYS190134</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <Arguments />
+                                    <CommandName>ResolveChanges</CommandName>
+                                    <ControlName>PurchParmTable_PurchAggHeader</ControlName>
+                                    <ControlType>ReferenceGroup</ControlType>
+                                    <LabelId></LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchAggHeader_ResolveChanges</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i44" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23824Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>80</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>81</Sequence>
+                                <Children>
+                                  <Node z:Id="i45" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Purchase agreement field, type a value.</Description>
+                                    <Id>23824Value_282a9c6e-912e-4223-a124-201b27753dd5x82</Id>
+                                    <Parent z:Ref="i44" />
+                                    <ParentSequence>81</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>82</Sequence>
+                                    <Annotations />
+                                    <GlobalId>64547362-78d3-4947-b48a-a93f121c140a</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase agreement</ControlLabel>
+                                    <ControlLabelId>@SYS190134</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>Ref_PurchAgreementHeader_PurchAgreementHeader_PSN</BoundDataSource>
+                                    <BoundProperty>PurchNumberSequence</BoundProperty>
+                                    <ControlName>PurchParmTable_PurchAggHeader_PurchNumberSequence</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>asdasd</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchAggHeader_PurchNumberSequence_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i46" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23825Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>83</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>84</Sequence>
+                                <Children>
+                                  <Node z:Id="i47" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Purchase agreement field, type a value.</Description>
+                                    <Id>23825Value_282a9c6e-912e-4223-a124-201b27753dd5x85</Id>
+                                    <Parent z:Ref="i46" />
+                                    <ParentSequence>84</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>85</Sequence>
+                                    <Annotations />
+                                    <GlobalId>6ccad67a-8a18-4070-ba51-ebebdc071408</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase agreement</ControlLabel>
+                                    <ControlLabelId>@SYS190134</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>Ref_CompanyInfo_CompanyInfo</BoundDataSource>
+                                    <BoundProperty>DataArea</BoundProperty>
+                                    <ControlName>PurchParmTable_PurchAggHeader_CompanyInfo_DataArea</ControlName>
+                                    <ControlType>Input</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value></Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchAggHeader_CompanyInfo_DataArea_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i48" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23823ResolveChanges_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>86</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>87</Sequence>
+                                <Children>
+                                  <Node z:Id="i49" i:type="CommandUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>ResolveChanges the Purchase agreement.</Description>
+                                    <Id>23823ResolveChanges_282a9c6e-912e-4223-a124-201b27753dd5x88</Id>
+                                    <Parent z:Ref="i48" />
+                                    <ParentSequence>87</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>88</Sequence>
+                                    <Annotations />
+                                    <GlobalId>4b849373-4b13-409b-b9e6-3932cd6fe6bd</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Purchase agreement</ControlLabel>
+                                    <ControlLabelId>@SYS190134</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <Arguments />
+                                    <CommandName>ResolveChanges</CommandName>
+                                    <ControlName>PurchParmTable_PurchAggHeader</ControlName>
+                                    <ControlType>ReferenceGroup</ControlType>
+                                    <LabelId></LabelId>
+                                    <ReturnType>Void</ReturnType>
+                                    <ReturnValue i:nil="true" />
+                                    <TaskId i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_PurchAggHeader_ResolveChanges</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i50" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23827Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>89</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>90</Sequence>
+                                <Children>
+                                  <Node z:Id="i51" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Invoice received date field, enter a date.</Description>
+                                    <Id>23827Value_282a9c6e-912e-4223-a124-201b27753dd5x91</Id>
+                                    <Parent z:Ref="i50" />
+                                    <ParentSequence>90</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>91</Sequence>
+                                    <Annotations />
+                                    <GlobalId>d29780d4-9517-405e-9807-1e41dba8eeb1</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Invoice received date</ControlLabel>
+                                    <ControlLabelId>@AccountsPayable:VendAPAutomationInvoiceReceivedDate</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>ReceivedDate</BoundProperty>
+                                    <ControlName>VendInvoiceInfoTable_ReceivedDate</ControlName>
+                                    <ControlType>Date</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>2025-06-28</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>VendInvoiceInfoTable_ReceivedDate_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i52" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23828Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>92</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>93</Sequence>
+                                <Children>
+                                  <Node z:Id="i53" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Invoice date field, enter a date.</Description>
+                                    <Id>23828Value_282a9c6e-912e-4223-a124-201b27753dd5x94</Id>
+                                    <Parent z:Ref="i52" />
+                                    <ParentSequence>93</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>94</Sequence>
+                                    <Annotations />
+                                    <GlobalId>79a38cab-b434-4108-8758-f3579297ec43</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Invoice date</ControlLabel>
+                                    <ControlLabelId>@SYS57610</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>DocumentDate</BoundProperty>
+                                    <ControlName>PurchParmTable_DocumentDate</ControlName>
+                                    <ControlType>Date</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>2025-06-28</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_DocumentDate_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i54" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23829Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>95</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>96</Sequence>
+                                <Children>
+                                  <Node z:Id="i55" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Date of vendor VAT register field, enter a date.</Description>
+                                    <Id>23829Value_282a9c6e-912e-4223-a124-201b27753dd5x97</Id>
+                                    <Parent z:Ref="i54" />
+                                    <ParentSequence>96</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>97</Sequence>
+                                    <Annotations />
+                                    <GlobalId>4f05942d-32f4-45d5-befe-b5356fb51701</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Date of vendor VAT register</ControlLabel>
+                                    <ControlLabelId>@VATDeclaration_W:VendorVATDateFieldName</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>VendorVATDate</BoundProperty>
+                                    <ControlName>VendInvoiceInfoTable_VendorVATDate</ControlName>
+                                    <ControlType>Date</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>2025-06-28</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>VendInvoiceInfoTable_VendorVATDate_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i56" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23830Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>98</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>99</Sequence>
+                                <Children>
+                                  <Node z:Id="i57" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Posting date field, enter a date.</Description>
+                                    <Id>23830Value_282a9c6e-912e-4223-a124-201b27753dd5x100</Id>
+                                    <Parent z:Ref="i56" />
+                                    <ParentSequence>99</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>100</Sequence>
+                                    <Annotations />
+                                    <GlobalId>10f187b6-bf42-4531-bc20-96189188f603</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Posting date</ControlLabel>
+                                    <ControlLabelId>@SYS14475</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>TransDate</BoundProperty>
+                                    <ControlName>PurchParmTable_TransDate</ControlName>
+                                    <ControlType>Date</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>2025-06-28</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_TransDate_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i58" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23831Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>101</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>102</Sequence>
+                                <Children>
+                                  <Node z:Id="i59" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>In the Due date field, enter a date.</Description>
+                                    <Id>23831Value_282a9c6e-912e-4223-a124-201b27753dd5x103</Id>
+                                    <Parent z:Ref="i58" />
+                                    <ParentSequence>102</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>103</Sequence>
+                                    <Annotations />
+                                    <GlobalId>2718c318-39aa-4b44-982e-a4396bda80b5</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Due date</ControlLabel>
+                                    <ControlLabelId>@SYS14588</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>editFixedDueDate</BoundProperty>
+                                    <ControlName>PurchParmTable_FixedDueDate</ControlName>
+                                    <ControlType>Date</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId i:nil="true" />
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>2025-06-28</Value>
+                                    <ValueLabel i:nil="true" />
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_FixedDueDate_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i60" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23833Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>104</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>105</Sequence>
+                                <Children>
+                                  <Node z:Id="i61" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>Select Yes in the On hold field.</Description>
+                                    <Id>23833Value_282a9c6e-912e-4223-a124-201b27753dd5x106</Id>
+                                    <Parent z:Ref="i60" />
+                                    <ParentSequence>105</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>106</Sequence>
+                                    <Annotations />
+                                    <GlobalId>dc33610c-51c8-4642-973d-e38aec246663</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>On hold</ControlLabel>
+                                    <ControlLabelId>@SYS108802</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>Hold</BoundProperty>
+                                    <ControlName>PurchParmTable_Hold</ControlName>
+                                    <ControlType>CheckBox</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId>@SysTaskRecorder:Slider_SetValue</LabelId>
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>True</Value>
+                                    <ValueLabel>@SysTaskRecorder:Yes</ValueLabel>
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>PurchParmTable_Hold_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                              <Node z:Id="i62" i:type="Scope">
+                                <CustomDescription i:nil="true" />
+                                <Description></Description>
+                                <Id>23837Value_282a9c6e-912e-4223-a124-201b27753dd5</Id>
+                                <Parent z:Ref="i23" />
+                                <ParentSequence>107</ParentSequence>
+                                <ScreenshotUri i:nil="true" />
+                                <Sequence>108</Sequence>
+                                <Children>
+                                  <Node z:Id="i63" i:type="PropertyUserAction">
+                                    <CustomDescription i:nil="true" />
+                                    <Description>Select Yes in the Allow matched invoice line quantity deduction field.</Description>
+                                    <Id>23837Value_282a9c6e-912e-4223-a124-201b27753dd5x109</Id>
+                                    <Parent z:Ref="i62" />
+                                    <ParentSequence>108</ParentSequence>
+                                    <ScreenshotUri i:nil="true" />
+                                    <Sequence>109</Sequence>
+                                    <Annotations />
+                                    <GlobalId>3d376578-e3ba-417d-befb-71125d95ac86</GlobalId>
+                                    <SystemGenerated>false</SystemGenerated>
+                                    <ControlLabel>Allow matched invoice line quantity deduction</ControlLabel>
+                                    <ControlLabelId>@AccountsPayable:AllowLineQuantityChange</ControlLabelId>
+                                    <FormId>23548_VendEditInvoice_282a9c6e-912e-4223-a124-201b27753dd5</FormId>
+                                    <ListContext i:nil="true" />
+                                    <RowIndex i:nil="true" />
+                                    <BoundDataSource>VendInvoiceInfoTable</BoundDataSource>
+                                    <BoundProperty>AllowLineQtyChange</BoundProperty>
+                                    <ControlName>AllowLineQtyChange</ControlName>
+                                    <ControlType>CheckBox</ControlType>
+                                    <IsReference>false</IsReference>
+                                    <LabelId>@SysTaskRecorder:Slider_SetValue</LabelId>
+                                    <PropertyName>Value</PropertyName>
+                                    <UserActionType>Input</UserActionType>
+                                    <Value>True</Value>
+                                    <ValueLabel>@SysTaskRecorder:Yes</ValueLabel>
+                                  </Node>
+                                </Children>
+                                <IsForm>false</IsForm>
+                                <IsStepGroup>false</IsStepGroup>
+                                <Name>AllowLineQtyChange_Value</Name>
+                                <ScopeType>Private</ScopeType>
+                              </Node>
+                            </Children>
+                            <IsForm>true</IsForm>
+                            <IsStepGroup>false</IsStepGroup>
+                            <Name>VendEditInvoice</Name>
+                            <ScopeType>Public</ScopeType>
+                          </Node>
+                        </Children>
+                        <IsForm>true</IsForm>
+                        <IsStepGroup>false</IsStepGroup>
+                        <Name>SysOperationSandboxForm</Name>
+                        <ScopeType>Public</ScopeType>
+                      </Node>
+                    </Children>
+                    <IsForm>true</IsForm>
+                    <IsStepGroup>false</IsStepGroup>
+                    <Name>VendEditInvoice</Name>
+                    <ScopeType>Public</ScopeType>
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>NewInvoice_Click</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+            </Children>
+            <IsForm>true</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>VendInvoiceInfoListPage</Name>
+            <ScopeType>Public</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>false</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>MenuItem_vendinvoiceinfolistpage</Name>
+        <ScopeType>Private</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>data_driven_invoice</Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i4" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i7" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i9" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i12" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i15" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i19" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i21" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i25" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i28" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i30" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i32" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i34" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i37" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i39" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i41" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i43" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i45" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i47" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i49" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i51" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i53" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i55" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i57" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i59" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i61" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i63" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>

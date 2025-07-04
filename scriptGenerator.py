@@ -1,14 +1,11 @@
 import xml.etree.ElementTree as ET
-import re
-import Interactions
-from selenium.webdriver.common.by import By
-from getLocatorFromControls import generate_xpath_from_control
+import os, sys, re
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from Utils import Interactions
+from Utils.getLocatorFromControls import generate_xpath_from_control
 
 import datetime
-# XML_PATH = "output.xml"
-# OUTPUT_SCRIPT = "rsat_script.py"
 
-# global varaiables for managing the generation of script
 def input_for_filterpane(value):
     if value and ";" in value:
         return [part.strip() for part in value.split(";") if part.strip()]
@@ -131,10 +128,10 @@ def extract_controls_with_types(root):
     return controls
 
 def generate_selenium_script(controls):
-    new_or_edit_or_save = ""
-    input_label = ""
-    input_name = ""
-    grid_for_table_or_data_selection = ""
+    # new_or_edit_or_save = ""
+    # input_label = ""
+    # input_name = ""
+    # grid_for_table_or_data_selection = ""
     previous_control_type = None
     previous_control_name = ""
     previous_control_description = ""
@@ -155,16 +152,20 @@ def generate_selenium_script(controls):
 "import os",
 "import pytest",
 "sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))",
-"from base import BaseTest",
+"from Utils.base import BaseTest",
 "from selenium.webdriver.common.by import By",
-"import Interactions",
+"from Utils import Interactions",
+"from Utils.screenRecorder import ScreenRecorder",
 "import time",
 "@pytest.mark.ui",
 "def test():",
-"    base = BaseTest()",
+"    base = BaseTest(\"user1\",incognito=True)",
 "    driver = base.driver",
 "    actions = base.actions",
-"    try:"
+"    recorder=ScreenRecorder()",
+"    try:",
+"        recorder.start()",
+
     ]
     for i, control in enumerate(controls):
         label = control["label"]
@@ -247,7 +248,11 @@ def generate_selenium_script(controls):
             elif description.strip() == "Click the form caption.":
                 lines.append("# Clicking the form caption")
                 lines.append("        Interactions.wait_and_click(driver, By.XPATH, \"//span[@class='formCaption link-content-validLink']\")")
-           
+            elif description == "Select Grid to add a field to it":
+                        lines.append("# Select Grid to add a field to it")
+                        lines.append("        Interactions.wait_and_click(driver, By.XPATH, \"//button[@aria-label='Grid options']\")")
+                        lines.append(f"        Interactions.wait_and_click(driver, By.XPATH, \"{xpath}\")")
+
             xpath = generate_xpath_from_control(ctype, name,label, description, value,second_word)
             multi_input_desc = [
                 "In the Broker field, enter or select a value."]
@@ -321,6 +326,7 @@ def generate_selenium_script(controls):
                     lines.append(f"        elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\")):")
                     lines.append(f"            Interactions.wait_and_click(driver, By.XPATH, \"{xpath[1]}\",base.steps_count,\"{description}\")")     
                 elif ctype == "segmentedentry":
+                    value = ""
                     lines.append(f"        base.steps_count +=1")
                     if "SegmentedEntry" in name and label== "Main account":
                         expand_button = f"//div[@data-dyn-controlname='{name}']/ancestor::div[@role='group']/preceding-sibling::div[@role='heading']//button"
@@ -361,6 +367,7 @@ def generate_selenium_script(controls):
                         lines.append(f"                actions.move_to_element(driver.find_element(By.XPATH, \"{xpath[2]}\")).perform()")
                         lines.append(f"                Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[2]}\", \"{value}\",base.steps_count,\"{description}\")")
                 elif  ctype in ["input" , "referencegroup"] :
+                    value = ""
                     dailog_box_container = "//div[@class='DialogContent group editMode no-caption-group col1 fill-width layout-container layout-vertical']"
                     edited_value = value
                     lines.append(f"        base.steps_count +=1")
@@ -480,6 +487,7 @@ def generate_selenium_script(controls):
                         lines.append(f"        elif(Interactions.check_element_exist(driver, By.XPATH, \"{xpath[1]}\")):")
                         lines.append(f"            Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[1]}\", \"{date}\",base.steps_count,\"{description}\")")
                 elif ctype == "real":
+                    value = ""
                     lines.append(f"        base.steps_count +=1")
                     dailog_box_container = "//div[@class='dialog-popup-content editMode Dialog fill-width fill-height layout-container layout-vertical']"
                     if add_line_flag and not dailog_box_line_items:
@@ -528,6 +536,7 @@ def generate_selenium_script(controls):
                         lines.append(f"                Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath[1]}\", \"{value}\", base.steps_count,\"{description}\")")
                         lines.append(f"            Interactions.press_enter(driver, By.XPATH, \"//body\")")
                 elif ctype == "multilineinput":
+                    value = ""
                     lines.append(f"        base.steps_count +=1")
                     lines.append(f"# Inputting into: {name}")
                     lines.append(f"        if(Interactions.check_element_exist(driver, By.XPATH, \"{xpath}\")):")
@@ -584,6 +593,7 @@ def generate_selenium_script(controls):
                     lines.append(f"        time.sleep(3)")
                     lines.append(f"        Interactions.wait_and_click(driver, By.XPATH, \"{xpath}\",base.steps_count,\"{description}\")")
                 elif ctype == "integer":
+                    value = ""
                     lines.append(f"        base.steps_count +=1")
                     lines.append(f"# Inputting into: {name}")
                     lines.append(f"        Interactions.clear_input_field_and_send_keys(driver, By.XPATH, \"{xpath}\", \"{value}\", base.steps_count,\"{description}\")")
@@ -702,7 +712,7 @@ def generate_selenium_script(controls):
                         elif  previous_control_type == "quickfilter":
                             lines.append(f"# Clicking button: {name}")
                             lines.append(f"        if Interactions.check_element_exist(driver, By.XPATH, f\"//input[@value='{quickFilterValue}']/ancestor::div[@class='fixedDataTableRowLayout_body']/div[1]//div[@role='checkbox']\"):")
-                            lines.append(f"             Interactions.wait_and_click(driver, By.XPATH, f\"//input[@value='{quickFilterValue}']/ancestor::div[@class='fixedDataTableRowLayout_body']/div[1]//div[@role='checkbox']\", base.steps_count,{description})")
+                            lines.append(f"             Interactions.wait_and_click(driver, By.XPATH, f\"//input[@value='{quickFilterValue}']/ancestor::div[@class='fixedDataTableRowLayout_body']/div[1]//div[@role='checkbox']\", base.steps_count,\"{description}\")")
                             lines.append(f"        else:")
                             lines.append(f"             Interactions.wait_and_click(driver, By.XPATH, f\"//input[@value='{quickFilterValue}']\", base.steps_count,\"{description}\")")
                             lines.append(f"        Interactions.press_enter(driver, By.XPATH, \"//input[@value='{quickFilterValue}']\")")
@@ -760,9 +770,11 @@ def generate_selenium_script(controls):
     lines.append("        if base.test_passed:")
     lines.append("            print(\"✅ Test case passed\")")
     lines.append("            Interactions.take_screenshot_on_pass(driver)")
+    lines.append("            recorder.stop_and_save()")
     lines.append("        else:")
     lines.append("            print(\"❌ Test case failed\")")
     lines.append("            Interactions.take_screenshot_on_failure(driver)")
+    lines.append("            recorder.stop_and_discard()")
     lines.append("        driver.quit()")
     return "\n".join(lines)
 def getScript(xml_path):
