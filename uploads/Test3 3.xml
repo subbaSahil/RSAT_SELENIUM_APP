@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Recording xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Client.ServerForm.TaskRecording">
+  <CanonicalId>5383c41a-df7c-457d-a858-d30d2ff69972</CanonicalId>
+  <CurrentSequence>29</CurrentSequence>
+  <Description></Description>
+  <FormContexts xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:KeyValueOfstringFormContextyaScvdpM>
+      <d2p1:Key>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</d2p1:Key>
+      <d2p1:Value>
+        <Annotations>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>CustTable</ConfigurationOwnerName>
+            <ConfigurationScope>10</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>0</FormViewOptionType>
+            <MenuItemLabel>All customers</MenuItemLabel>
+            <MenuItemName>CustTableListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+          <Annotation i:type="FormAnnotation">
+            <ConfigurationOwnerName>CustTable</ConfigurationOwnerName>
+            <ConfigurationScope>10</ConfigurationScope>
+            <FilterCommandName>ApplyFilters</FilterCommandName>
+            <FilterControlName>SystemDefinedFilterPane</FilterControlName>
+            <FormViewOptionType>1</FormViewOptionType>
+            <MenuItemLabel>All customers</MenuItemLabel>
+            <MenuItemName>CustTableListPage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <PublishedFromConfiguration>0</PublishedFromConfiguration>
+          </Annotation>
+        </Annotations>
+        <FormID>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormID>
+        <FormName>CustTable</FormName>
+        <HasMetadata>true</HasMetadata>
+        <RecordingName>CustTable</RecordingName>
+        <Sequence>4</Sequence>
+      </d2p1:Value>
+    </d2p1:KeyValueOfstringFormContextyaScvdpM>
+  </FormContexts>
+  <Name>sdf</Name>
+  <RootScope z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+    <CustomDescription i:nil="true" />
+    <Description i:nil="true" />
+    <Id>f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+    <Parent i:nil="true" />
+    <ParentSequence>0</ParentSequence>
+    <ScreenshotUri i:nil="true" />
+    <Sequence>0</Sequence>
+    <Children>
+      <Node z:Id="i2" i:type="Scope">
+        <CustomDescription i:nil="true" />
+        <Description></Description>
+        <Id>MenuItemcusttablelistpage_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+        <Parent z:Ref="i1" />
+        <ParentSequence>0</ParentSequence>
+        <ScreenshotUri i:nil="true" />
+        <Sequence>1</Sequence>
+        <Children>
+          <Node z:Id="i3" i:type="MenuItemUserAction">
+            <CustomDescription i:nil="true" />
+            <Description>Go to Accounts receivable &gt; Customers &gt; All customers.</Description>
+            <Id>MenuItemcusttablelistpage_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x2</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>1</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>2</Sequence>
+            <Annotations />
+            <GlobalId>f6893a0e-4a74-4ab0-a8bc-113d3d0f2938</GlobalId>
+            <SystemGenerated>false</SystemGenerated>
+            <MenuItemName>custtablelistpage</MenuItemName>
+            <MenuItemType>Display</MenuItemType>
+            <NavigationPath xmlns:d7p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+              <d7p1:string>mainmenu</d7p1:string>
+              <d7p1:string>AccountsReceivable</d7p1:string>
+              <d7p1:string>Customers</d7p1:string>
+            </NavigationPath>
+          </Node>
+          <Node z:Id="i4" i:type="Scope">
+            <CustomDescription i:nil="true" />
+            <Description></Description>
+            <Id>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+            <Parent z:Ref="i2" />
+            <ParentSequence>1</ParentSequence>
+            <ScreenshotUri i:nil="true" />
+            <Sequence>3</Sequence>
+            <Children>
+              <Node z:Id="i5" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>QuickFilterControl_ApplyFilterForTaskRecorder_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>6</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>7</Sequence>
+                <Children>
+                  <Node z:Id="i6" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>Use the Quick Filter to find records. For example, filter on the Name field with a value of '200'.</Description>
+                    <Id>QuickFilterControl_ApplyFilterForTaskRecorder_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x8</Id>
+                    <Parent z:Ref="i5" />
+                    <ParentSequence>7</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>8</Sequence>
+                    <Annotations />
+                    <GlobalId>d9e9bc46-e6d8-4bfd-89db-5e7c09e24039</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>Name</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>200</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>{"FieldName":"CustTable_Name","ReferenceUserActionSequenceId":"","Value":"200","Version":3}</Value>
+                      </CommandArgument>
+                      <CommandArgument>
+                        <IsReference>false</IsReference>
+                        <Value>2</Value>
+                      </CommandArgument>
+                    </Arguments>
+                    <CommandName>ApplyFilterForTaskRecorder</CommandName>
+                    <ControlName>QuickFilterControl</ControlName>
+                    <ControlType>QuickFilter</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue></ReturnValue>
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>QuickFilterControl_ApplyFilterForTaskRecorder</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+              <Node z:Id="i7" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>26981NavigationAction_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>9</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>10</Sequence>
+                <Children>
+                  <Node z:Id="i8" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>In the list, click the link in the selected row.</Description>
+                    <Id>26981NavigationAction_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x11</Id>
+                    <Parent z:Ref="i7" />
+                    <ParentSequence>10</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>11</Sequence>
+                    <Annotations />
+                    <GlobalId>c75d579b-52ab-4d09-b3f3-739d79c1cca6</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext>Grid</ListContext>
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>NavigationAction</CommandName>
+                    <ControlName>Grid</ControlName>
+                    <ControlType>Grid</ControlType>
+                    <LabelId></LabelId>
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue i:nil="true" />
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>Grid_NavigationAction</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+              <Node z:Id="i9" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>26872_0TabShown_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>12</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>13</Sequence>
+                <Children>
+                  <Node z:Id="i10" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>On the Action Pane, click Sell.</Description>
+                    <Id>26872_0TabShown_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x14</Id>
+                    <Parent z:Ref="i9" />
+                    <ParentSequence>13</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>14</Sequence>
+                    <Annotations />
+                    <GlobalId>063f484b-a72d-4383-97c4-e065d3ba4fa5</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel>Sell</ControlLabel>
+                    <ControlLabelId>@SYS316459</ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>TabShown</CommandName>
+                    <ControlName>aptabSell</ControlName>
+                    <ControlType>AppBarTab</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue i:nil="true" />
+                    <TaskId></TaskId>
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>aptabSell_TabShown</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+              <Node z:Id="i11" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>AddressGridFormPart_OpenFormPart_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>17</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>18</Sequence>
+                <Children>
+                  <Node z:Id="i12" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description i:nil="true" />
+                    <Id>AddressGridFormPart_OpenFormPart_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x19</Id>
+                    <Parent z:Ref="i11" />
+                    <ParentSequence>18</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>19</Sequence>
+                    <Annotations />
+                    <GlobalId>75b4a7cd-5b48-43f5-98be-4ba587f2a6bc</GlobalId>
+                    <SystemGenerated>true</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>OpenFormPart</CommandName>
+                    <ControlName>AddressGridFormPart</ControlName>
+                    <ControlType>Part</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>FormContext</ReturnType>
+                    <ReturnValue>27614_LogisticsPostalAddressGrid_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</ReturnValue>
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>AddressGridFormPart_OpenFormPart</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+              <Node z:Id="i13" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>ElectronicAddressGridFormPart_OpenFormPart_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>22</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>23</Sequence>
+                <Children>
+                  <Node z:Id="i14" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description i:nil="true" />
+                    <Id>ElectronicAddressGridFormPart_OpenFormPart_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x24</Id>
+                    <Parent z:Ref="i13" />
+                    <ParentSequence>23</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>24</Sequence>
+                    <Annotations />
+                    <GlobalId>0ac1e377-0ca5-4445-be69-3bc8d1ce4159</GlobalId>
+                    <SystemGenerated>true</SystemGenerated>
+                    <ControlLabel></ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>OpenFormPart</CommandName>
+                    <ControlName>ElectronicAddressGridFormPart</ControlName>
+                    <ControlType>Part</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>FormContext</ReturnType>
+                    <ReturnValue>27640_LogisticsContactInfoGrid_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</ReturnValue>
+                    <TaskId i:nil="true" />
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>ElectronicAddressGridFormPart_OpenFormPart</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+              <Node z:Id="i15" i:type="Scope">
+                <CustomDescription i:nil="true" />
+                <Description></Description>
+                <Id>26837_0Click_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</Id>
+                <Parent z:Ref="i4" />
+                <ParentSequence>27</ParentSequence>
+                <ScreenshotUri i:nil="true" />
+                <Sequence>28</Sequence>
+                <Children>
+                  <Node z:Id="i16" i:type="CommandUserAction">
+                    <CustomDescription i:nil="true" />
+                    <Description>Click Edit.</Description>
+                    <Id>26837_0Click_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62x29</Id>
+                    <Parent z:Ref="i15" />
+                    <ParentSequence>28</ParentSequence>
+                    <ScreenshotUri i:nil="true" />
+                    <Sequence>29</Sequence>
+                    <Annotations />
+                    <GlobalId>4f44ba91-fa19-411c-81e4-a872a139aa6f</GlobalId>
+                    <SystemGenerated>false</SystemGenerated>
+                    <ControlLabel>Edit</ControlLabel>
+                    <ControlLabelId></ControlLabelId>
+                    <FormId>25248_CustTable_f2245e71-a2bc-42b4-ae49-fb3a9c97cf62</FormId>
+                    <ListContext i:nil="true" />
+                    <RowIndex i:nil="true" />
+                    <Arguments />
+                    <CommandName>Click</CommandName>
+                    <ControlName>SystemDefinedViewEditButton</ControlName>
+                    <ControlType>CommandButton</ControlType>
+                    <LabelId i:nil="true" />
+                    <ReturnType>Void</ReturnType>
+                    <ReturnValue i:nil="true" />
+                    <TaskId>4471</TaskId>
+                  </Node>
+                </Children>
+                <IsForm>false</IsForm>
+                <IsStepGroup>false</IsStepGroup>
+                <Name>SystemDefinedViewEditButton_Click</Name>
+                <ScopeType>Private</ScopeType>
+              </Node>
+            </Children>
+            <IsForm>true</IsForm>
+            <IsStepGroup>false</IsStepGroup>
+            <Name>CustTable</Name>
+            <ScopeType>Public</ScopeType>
+          </Node>
+        </Children>
+        <IsForm>false</IsForm>
+        <IsStepGroup>false</IsStepGroup>
+        <Name>MenuItem_custtablelistpage</Name>
+        <ScopeType>Private</ScopeType>
+      </Node>
+    </Children>
+    <IsForm>false</IsForm>
+    <IsStepGroup>false</IsStepGroup>
+    <Name>sdf</Name>
+    <ScopeType>Public</ScopeType>
+  </RootScope>
+  <UserActions xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:anyType z:Ref="i3" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i6" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i8" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i10" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i12" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i14" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+    <d2p1:anyType z:Ref="i16" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+  </UserActions>
+  <Version>1</Version>
+</Recording>

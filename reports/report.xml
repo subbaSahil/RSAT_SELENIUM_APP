@@ -1,1 +1,136 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="0" time="38.445" timestamp="2025-06-23T18:02:10.964999+05:30" hostname="PSDLAP373" /></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="143.349" timestamp="2025-07-04T17:29:42.823478+05:30" hostname="PSDLAP373"><testcase classname="tests.script_Test3_test" name="test" time="109.477"><failure message="selenium.common.exceptions.TimeoutException: Message: &#10;Stacktrace:&#10;&#09;GetHandleVerifier [0x0x7ff6fa0b6f95+76917]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0b6ff0+77008]&#10;&#09;(No symbol) [0x0x7ff6f9e69dea]&#10;&#09;(No symbol) [0x0x7ff6f9ec0256]&#10;&#09;(No symbol) [0x0x7ff6f9ec050c]&#10;&#09;(No symbol) [0x0x7ff6f9f13887]&#10;&#09;(No symbol) [0x0x7ff6f9ee84af]&#10;&#09;(No symbol) [0x0x7ff6f9f1065c]&#10;&#09;(No symbol) [0x0x7ff6f9ee8243]&#10;&#09;(No symbol) [0x0x7ff6f9eb1431]&#10;&#09;(No symbol) [0x0x7ff6f9eb21c3]&#10;&#09;GetHandleVerifier [0x0x7ff6fa38d2cd+3051437]&#10;&#09;GetHandleVerifier [0x0x7ff6fa387923+3028483]&#10;&#09;GetHandleVerifier [0x0x7ff6fa3a58bd+3151261]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0d185e+185662]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0d971f+218111]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0bfb14+112628]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0bfcc9+113065]&#10;&#09;GetHandleVerifier [0x0x7ff6fa0a6c98+10616]&#10;&#09;BaseThreadInitThunk [0x0x7ffe3911e8d7+23]&#10;&#09;RtlUserThreadStart [0x0x7ffe39f9c34c+44]">@pytest.mark.ui
+    def test():
+        base = BaseTest("user1",incognito=True)
+        driver = base.driver
+        actions = base.actions
+        recorder=ScreenRecorder()
+        try:
+            recorder.start()
+            Interactions.wait_and_click(driver, By.XPATH, "//div[@aria-label='Modules']")
+    # Clicking navigation: Accounts receivable
+            Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Accounts receivable']")
+    # Clicking navigation: Customers
+            Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='Customers']")
+    # Clicking navigation: All customers
+            base.steps_count +=1
+            Interactions.wait_and_click(driver, By.XPATH, "//a[@data-dyn-title='All customers']",base.steps_count, "Go to Accounts receivable &gt; Customers &gt; All customers.")
+    # Inputting into: QuickFilterControl
+            base.steps_count +=1
+            if(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@name,'QuickFilterControl')]")):
+                locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@name,'QuickFilterControl')]")
+                Interactions.clear_input_field_and_send_keys(driver, By.XPATH, locator, "200",base.steps_count,"Use the Quick Filter to find records. For example, filter on the Name field with a value of '200'.")
+                Interactions.press_enter(driver, By.XPATH, locator)
+            elif(Interactions.check_element_exist(driver, By.XPATH, "//input[contains(@aria-label,'')]")):
+                locator=Interactions.get_locator(driver, By.XPATH, "//input[contains(@aria-label,'')]")
+                Interactions.clear_input_field_and_send_keys(driver, By.XPATH, locator, "200",base.steps_count,"Use the Quick Filter to find records. For example, filter on the Name field with a value of '200'.")
+                Interactions.press_enter(driver, By.XPATH, locator)
+            base.steps_count +=1
+    # Clicking button: Grid
+            if Interactions.check_element_exist(driver, By.XPATH, f"//input[@value='200']/ancestor::div[@class='fixedDataTableRowLayout_body']/div[1]//div[@role='checkbox']"):
+                 Interactions.wait_and_click(driver, By.XPATH, f"//input[@value='200']/ancestor::div[@class='fixedDataTableRowLayout_body']/div[1]//div[@role='checkbox']", base.steps_count,"In the list, click the link in the selected row.")
+            else:
+                 Interactions.wait_and_click(driver, By.XPATH, f"//input[@value='200']", base.steps_count,"In the list, click the link in the selected row.")
+            Interactions.press_enter(driver, By.XPATH, "//input[@value='200']")
+            base.steps_count +=1
+    # Clicking (default) on: aptabSell
+            time.sleep(3)
+            Interactions.wait_and_click(driver, By.XPATH, "//button/parent::div[@data-dyn-controlname='aptabSell']",base.steps_count,"On the Action Pane, click Sell.")
+            base.steps_count +=1
+            if(Interactions.check_element_exist(driver, By.XPATH, "//button[@name='SystemDefinedViewEditButton']")):
+                Interactions.wait_and_click(driver, By.XPATH, "//button[@name='SystemDefinedViewEditButton']",base.steps_count, "Click Edit.")
+            elif(Interactions.check_element_exist(driver, By.XPATH, "//button[@data-dyn-controlname='SystemDefinedViewEditButton']")):
+                Interactions.wait_and_click(driver, By.XPATH, "//button[@data-dyn-controlname='SystemDefinedViewEditButton']",base.steps_count,"Click Edit.")
+            assert True
+        except Exception as e:
+            base.test_passed = False
+&gt;           raise e
+
+tests\script_Test3_test.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\script_Test3_test.py:42: in test
+    Interactions.press_enter(driver, By.XPATH, "//input[@value='200']")
+Utils\Interactions.py:260: in press_enter
+    element = WebDriverWait(driver, timeout).until(EC.element_to_be_clickable((by, value)))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;selenium.webdriver.support.wait.WebDriverWait (session="0cb69bfa0b0d7ff22fb1db32a7b5c758")&gt;
+method = &lt;function element_to_be_clickable.&lt;locals&gt;._predicate at 0x000001BFF05B2660&gt;, message = ''
+
+    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = "") -&gt; T:
+        """Wait until the method returns a value that is not False.
+    
+        Calls the method provided with the driver as an argument until the
+        return value does not evaluate to ``False``.
+    
+        Parameters:
+        ----------
+        method: callable(WebDriver)
+            - A callable object that takes a WebDriver instance as an argument.
+    
+        message: str
+            - Optional message for :exc:`TimeoutException`
+    
+        Return:
+        -------
+        object: T
+            - The result of the last call to `method`
+    
+        Raises:
+        -------
+        TimeoutException
+            - If 'method' does not return a truthy value within the WebDriverWait
+            object's timeout
+    
+        Example:
+        --------
+        &gt;&gt;&gt; from selenium.webdriver.common.by import By
+        &gt;&gt;&gt; from selenium.webdriver.support.ui import WebDriverWait
+        &gt;&gt;&gt; from selenium.webdriver.support import expected_conditions as EC
+    
+        # Wait until an element is visible on the page
+        &gt;&gt;&gt; wait = WebDriverWait(driver, 10)
+        &gt;&gt;&gt; element = wait.until(EC.visibility_of_element_located((By.ID, "exampleId")))
+        &gt;&gt;&gt; print(element.text)
+        """
+        screen = None
+        stacktrace = None
+    
+        end_time = time.monotonic() + self._timeout
+        while True:
+            try:
+                value = method(self._driver)
+                if value:
+                    return value
+            except self._ignored_exceptions as exc:
+                screen = getattr(exc, "screen", None)
+                stacktrace = getattr(exc, "stacktrace", None)
+            if time.monotonic() &gt; end_time:
+                break
+            time.sleep(self._poll)
+&gt;       raise TimeoutException(message, screen, stacktrace)
+E       selenium.common.exceptions.TimeoutException: Message: 
+E       Stacktrace:
+E       	GetHandleVerifier [0x0x7ff6fa0b6f95+76917]
+E       	GetHandleVerifier [0x0x7ff6fa0b6ff0+77008]
+E       	(No symbol) [0x0x7ff6f9e69dea]
+E       	(No symbol) [0x0x7ff6f9ec0256]
+E       	(No symbol) [0x0x7ff6f9ec050c]
+E       	(No symbol) [0x0x7ff6f9f13887]
+E       	(No symbol) [0x0x7ff6f9ee84af]
+E       	(No symbol) [0x0x7ff6f9f1065c]
+E       	(No symbol) [0x0x7ff6f9ee8243]
+E       	(No symbol) [0x0x7ff6f9eb1431]
+E       	(No symbol) [0x0x7ff6f9eb21c3]
+E       	GetHandleVerifier [0x0x7ff6fa38d2cd+3051437]
+E       	GetHandleVerifier [0x0x7ff6fa387923+3028483]
+E       	GetHandleVerifier [0x0x7ff6fa3a58bd+3151261]
+E       	GetHandleVerifier [0x0x7ff6fa0d185e+185662]
+E       	GetHandleVerifier [0x0x7ff6fa0d971f+218111]
+E       	GetHandleVerifier [0x0x7ff6fa0bfb14+112628]
+E       	GetHandleVerifier [0x0x7ff6fa0bfcc9+113065]
+E       	GetHandleVerifier [0x0x7ff6fa0a6c98+10616]
+E       	BaseThreadInitThunk [0x0x7ffe3911e8d7+23]
+E       	RtlUserThreadStart [0x0x7ffe39f9c34c+44]
+
+..\..\..\..\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\selenium\webdriver\support\wait.py:146: TimeoutException</failure></testcase><testcase classname="tests.script_recording1_test" name="test" time="32.890" /></testsuite></testsuites>
