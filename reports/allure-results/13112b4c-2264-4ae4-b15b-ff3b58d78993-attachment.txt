@@ -1,0 +1,5 @@
+Login Successful as user1
+✅ Clicked element with base_xpath: //div[@aria-label='Modules']
+❌ Test case failed
+📸 Screenshot saved: reports/screens\script_recording1_test_20250707_173546.png
+🗑️ Discarded failed test recording.

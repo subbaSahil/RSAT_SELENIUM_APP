@@ -1,0 +1,15 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-8.3.5, pluggy-1.5.0 -- C:\Users\MonalishaRabha\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.11.9', 'Platform': 'Windows-10-10.0.26100-SP0', 'Packages': {'pytest': '8.3.5', 'pluggy': '1.5.0'}, 'Plugins': {'allure-pytest': '2.14.3', 'html': '4.1.1', 'metadata': '3.1.1', 'rerunfailures': '15.1', 'xdist': '3.7.0'}}
+rootdir: C:\Users\MonalishaRabha\Desktop\vscode\build-1.2 copy
+configfile: pytest.ini
+testpaths: tests
+plugins: allure-pytest-2.14.3, html-4.1.1, metadata-3.1.1, rerunfailures-15.1, xdist-3.7.0
+collecting ... collected 1 item
+
+tests/script_recording1_test.py::test PASSED                             [100%]
+
+- generated xml file: C:\Users\MonalishaRabha\Desktop\vscode\build-1.2 copy\reports\report.xml -
+- Generated html report: file:///C:/Users/MonalishaRabha/Desktop/vscode/build-1.2%20copy/reports/report.html -
+============================= 1 passed in 44.35s ==============================

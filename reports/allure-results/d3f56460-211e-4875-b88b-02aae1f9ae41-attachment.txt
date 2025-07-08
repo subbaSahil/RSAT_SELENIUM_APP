@@ -1,0 +1,8 @@
+Login Successful as user1
+✅ Clicked element with base_xpath: //div[@aria-label='Modules']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Accounts payable']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Open prepayments']
+✅ Clicked element with base_xpath: //button[@name='NewButton']
+✅ Test case passed
+📸 Screenshot saved: reports/screens\script_recording1_test_20250707_145334.png
+🎥 Saved recording: reports/recordings\script_recording1_test_145318.mp4

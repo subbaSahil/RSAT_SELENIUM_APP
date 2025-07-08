@@ -1,0 +1,10 @@
+Login Successful as user1
+✅ Clicked element with base_xpath: //div[@aria-label='Modules']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Procurement and sourcing']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='Vendors']
+✅ Clicked element with base_xpath: //a[@data-dyn-title='All vendors']
+Navigation found: ['Procurement and sourcing', 'Vendors', 'All vendors']
+Navigation verified successfully.
+✅ Test case passed
+📸 Screenshot saved: reports/screens\script_Invoice Hold_test_20250707_182833.png
+🎥 Saved recording: reports/recordings\script_Invoice Hold_test_182827.mp4
